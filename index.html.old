@@ -32,13 +32,8 @@ body {
 
 .ascii-art {
   font-family: monospace;
-  white-space: pre;  
-}
-
-.image {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+  white-space: pre;
+  
 }
 /* Increase the font size of the heading */
 .header h1 {
@@ -98,7 +93,7 @@ body {
 }
 
 /* Image class */
-.image-style {
+.image {
   background-color: #fff;
   width: 100%;
   padding: 20px;
@@ -129,6 +124,10 @@ body {
 </head>
 <body>
 
+<div class="header">
+  <h1>Paula Rodríguez</h1>
+  <h2>Ingeniera de Cloud y fan del ASCii art</h2>
+</div>
 
 <div class="navbar">
   <a href="libro-prodriguez.pdf"><h3>Descarga en pdf</h3></a>
@@ -147,23 +146,25 @@ body {
     (..)
    c(")(")
   </div>
+
+
   </div>
   <div class="main">
     <h2>Libro</h2>
     <h5>Autoayuda para combatir el ambiente laboral tóxico</h5>
-    <div class="image-style" style="height:200px;"><img src="portada.png"></div>    
+    <img src="portada.png">
     <p>Este libro ha sido escrito desde el crecimiento post traumático de haber trabajado varios años en un ambiente laboral tóxico.</p>
     <p>Si te identificas con esta situación quizás el libro puede resultarte interesante.</p> 
     <p>El libro contiene información útil y ejemplos prácticos para superar el acoso laboral y contramedidas para combatir la manipulación.</p> 
-    <p>También hay un capítulo específico con estrategias para encontrar un nuevo empleo.</p>   
-      <h2>Agradecimientos</h2>
-<p>Gracias al COVID-19 y a haber tenido la oportunidad de poder trabajar desde casa, he podido analizar y entender comportamientos tóxicos de ex-jefes y ex-compañeros de trabajo.</p>
-<p>En mi lista de agradecimientos está el COVID-19, pero también están algunos ex-compañeros
-de trabajo que no solo me escucharon de forma muy comprensiva, sino que me dieron su
-punto de vista y su apoyo.</p>
-<p>Por último agradecer a las amigas y amigos que accedieron a revisar el borrador de este escrito para mejorarlo antes de su publicación en internet.</p>
+    <p>También hay un capítulo específico con estrategias para encontrar un nuevo empleo.</p>    
   </div>
+
   </div>
 </div>
+
+<div class="footer">
+<3 Esta web ha sido desplegada gracias a una plantilla de ejemplo de <a href="https://www.w3schools.com">www.w3schools.com</a> a esta <a href=https://projects.verou.me/css3patterns>galería de patrones CSS</a> y a <a href="https://pages.github.com">GitHub Pages</a>
+</div>
+
 </body>
 </html>
