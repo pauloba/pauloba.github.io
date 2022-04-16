@@ -1,147 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title> pauloba</title>
-<link rel="icon" type="image/x-icon" href="favicon.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title> pauloba</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* https://diybookcovers.com/3Dmockups/# */
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-/* Style the body */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
+    /* https://diybookcovers.com/3Dmockups/# */
 
-/* Header/logo Title */
-.header {
-  padding: 10px;
-  text-align: center;
-  color: white;
-  /* Tartan pattern  https://projects.verou.me/css3patterns/#tartan */
-  background-color: hsl(210, 51%, 71%);
-  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-  repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-  repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
-}
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
 
-.ascii-art {
-  font-family: monospace;
-  white-space: pre;  
-}
+    /* Header/logo Title */
+    .header {
+      padding: 10px;
+      text-align: center;
+      color: white;
+      /* Tartan pattern  https://projects.verou.me/css3patterns/#tartan */
+      background-color: hsl(210, 51%, 71%);
+      background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+      repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+      repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    }
 
-.image {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+    .ascii-art {
+      font-family: monospace;
+      white-space: pre;  
+    }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .image {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
 
-/* Increase the font size of the heading */
-.header h1 {
-  font-size: 40px;
-}
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right;
-}
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #94c8ff;
-  color: black;
-}
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
 
-/* Column container */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #94c8ff;
+      color: black;
+    }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  -ms-flex: 30%; /* IE10 */
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+    /* Column container */
+    .row {  
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+    }
 
-/* Main column */
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-}
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
 
-/* Image class */
-.image-style {
-  background-color: #fff;
-  width: 100%;
-  padding: 20px;
-}
+    /* Main column */
+    .main {   
+      -ms-flex: 70%; /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
+    /* Image class */
+    .image-style {
+      background-color: #fff;
+      width: 100%;
+      padding: 20px;
+    }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
-    flex-direction: column;
-  }
-}
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {   
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
+
 <body>
 
-
-<div class="navbar">
-  <a href="libro-prodriguez.pdf"><h3>Descarga en pdf</h3></a>
-  <a href="libro-prodriguez.epub"><h3>Descarga en epub</h3></a>
-  <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez" target="_blank" rel="noreferrer noopener"><h3>Contacta conmigo</h3></a>
-</div>
+  <div class="navbar">
+    <a href="libro-prodriguez.pdf"><h3>Descarga en pdf</h3></a>
+    <a href="libro-prodriguez.epub"><h3>Descarga en epub</h3></a>
+    <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez" target="_blank" rel="noreferrer noopener"><h3>Contacta conmigo</h3></a>
+  </div>
 
 <div class="row">
   <div class="side">
@@ -152,7 +154,7 @@ body {
         <p>Mi única intención es que la información que he compilado en el libro esté disponible de forma gratuita y accesible para todas las personas que quieran leerla.</p> 
         <p>Si esto ayuda, aunque solo sea a una persona, mi objetivo se habrá cumplido.</p>
 
-    <img scr="bunny.png" class="center">
+    <div class="image" img scr="bunny.png" class="center">
 
     <h2>Agradecimientos</h2>
       <p>Gracias al COVID-19 y a haber tenido la oportunidad de poder trabajar desde casa, he podido analizar y entender comportamientos tóxicos de ex-jefes y ex-compañeros de trabajo.</p>
@@ -164,38 +166,40 @@ body {
 
   </div>
   
-    <div class="main">
-        <h2>Libro para combatir el ambiente laboral tóxico</h2>
-            <img src="portada.png">
+  <div class="main">
+    <h2>Libro para combatir el ambiente laboral tóxico</h2>
+      <img src="portada.png">
             
-            <p>Este libro ha sido escrito desde el crecimiento post traumático de haber trabajado varios años en un ambiente laboral tóxico.</p>
-            <p>Si te identificas con esta situación quizás el libro puede resultarte interesante.</p> 
-            <p>El libro se divide en VII capítulos:</p> 
+      <p>Este libro ha sido escrito desde el crecimiento post traumático de haber trabajado varios años en un ambiente laboral tóxico.</p>
+      <p>Si te identificas con esta situación quizás el libro puede resultarte interesante.</p> 
+      <p>El libro se divide en VII capítulos:</p> 
             
-            <ul style="line-height:180%">
-              <li>Los capítulos II y III revisan una parte de la historia del feminismo de la mano del filósofo noruego Ingjald Nissen y la política feminista Berit Ås:
-                  <ul><li>Capítulo II, Qué son las MST.</li></ul>
-              </li>
+      <ul style="line-height:180%">
+        <li>Los capítulos II y III revisan una parte de la historia del feminismo de la mano del filósofo noruego Ingjald Nissen y la política feminista Berit Ås:
+          <ul><li>Capítulo II, Qué son las MST.</li></ul>
+        </li>
 
-              <li>El capítulo IV versa sobre contramedidas para combatir la manipulación:
-                    <ul><li>Capítulo IV, Contramedidas para combatir las Master Suppression Techniques. </li></ul>
-              </li>
+        <li>El capítulo IV versa sobre contramedidas para combatir la manipulación:
+          <ul><li>Capítulo IV, Contramedidas para combatir las Master Suppression Techniques. </li></ul>
+        </li>
 
-              <li>El capítulo V habla sobre acoso y microagresiones:
-                  <ul><li>Micromachismo. Esta sección es una entrevista a Luis Bonino, psicoterapeuta experto en salud mental y cuestiones de género.</li></ul>
-                  <ul><li>Princesas y heroínas. Post de Teresa Busto, ingeniera industrial de Airbus, que escribe sobre machismo en su trayectoria profesional.</li></ul>
-              </li>
+        <li>El capítulo V habla sobre acoso y microagresiones:
+          <ul><li>Micromachismo. Esta sección es una entrevista a Luis Bonino, psicoterapeuta experto en salud mental y cuestiones de género.</li></ul>
+          <ul><li>Princesas y heroínas. Post de Teresa Busto, ingeniera industrial de Airbus, que escribe sobre machismo en su trayectoria profesional.</li></ul>
+        </li>
 
-              <li>El capítulo VI se enfoca en el entorno laboral moderno. Contiene información útil y ejemplos prácticos para superar el acoso laboral y encontrar un nuevo empleo:
-                  <ul><li>Ejercicios prácticos para desarrollar la inteligencia emocional.</li></ul>  
-                  <ul><li>Tips para encontrar empleo en el entorno IT.</li></ul>
-              </li>
+        <li>El capítulo VI se enfoca en el entorno laboral moderno. Contiene información útil y ejemplos prácticos para superar el acoso laboral y encontrar un nuevo empleo:
+          <ul><li>Ejercicios prácticos para desarrollar la inteligencia emocional.</li></ul>  
+          <ul><li>Tips para encontrar empleo en el entorno IT.</li></ul>
+        </li>
 
-              <li>Y por último, el capítulo VII contiene algunas reflexiones generales basadas en dos fábulas modernas bastante populares:</li>
-                  <ul><li>Reflexiones.</li></ul>
-
-              <li>El final del libro es un compendio de todas las URLs usadas como material de consulta:</li>
+        <li>Y por último, el capítulo VII contiene algunas reflexiones generales basadas en dos fábulas modernas bastante populares:
+          <ul><li>Reflexiones.</li></ul>
+        </li>
+             
+        <li>El final del libro es un compendio de todas las URLs usadas como material de consulta:
                   <ul><li>Bibliografía.</li></ul>
+        </li>
     </div>
   </div>
 </div>
