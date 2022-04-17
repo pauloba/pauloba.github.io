@@ -134,11 +134,21 @@
     }
     /* Bunny image avatar - hover effect */
     .avatar {
-        background: url("https://pauloba.github.io/bunny.png") no-repeat;
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
         margin: 50px;
     }
-    .avatar:hover {
-        background: url("https://pauloba.github.io/bunny2.png") no-repeat;
+    .avatar .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .avatar:hover .img-top {
+        display: inline;
     }
 
     /* Footer */
@@ -200,8 +210,10 @@
       <p>Gracias tambien a que el mundo ha cambiado para bien y existen congresos donde las mujeres participamos cada vez más: <a href="https://www.youtube.com/watch?v=iTu9E2fVh70">vídeo recomendado</a></p>
       <p>Por último agradecer a las amigas y amigos que accedieron a revisar el borrador de este escrito para mejorarlo antes de su publicación en internet.</p>
 
-      <div class="avatar"></div>
-
+      <div class="avatar">
+        <img src="https://pauloba.github.io/bunny.png" alt="Bunny ASCii art.">
+          <img src="https://pauloba.github.io/bunny2.png" class="img-top" alt="Bunny with hearts ASCii art.">
+      </div>
   </div>
   
   <div class="main">
