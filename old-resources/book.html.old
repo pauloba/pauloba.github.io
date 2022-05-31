@@ -26,6 +26,22 @@
       padding: 10px;
       text-align: center;
       color: white;
+      /* Tartan pattern  https://projects.verou.me/css3patterns/#tartan */
+      background-color: hsl(210, 51%, 71%);
+      background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+      repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
+      repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    }
+
+    .ascii-art {
+      font-family: monospace;
+      white-space: pre;  
+    }
+
+    .image {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
     }
 
     .center {
@@ -117,6 +133,26 @@
       width: 100%;
       padding: 20px;
     }
+    /* Bunny image avatar - hover effect */
+    .avatar {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .avatar .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .avatar:hover .img-top {
+        display: inline;
+    }
+
     /* Footer */
     .footer {
       padding: 20px;
@@ -171,8 +207,7 @@
 
 <div class="row">
   <div class="side">
-    <img src="book-resources/portada.png" alt="Book and ebook cover.">
-
+    
     <h2>Sobre mi</h2>
       <p>Me llamo Paula, y soy ingeniera informática.</p> 
       <p>He creado este espacio para publicar un libro sobre acoso laboral.</p> 
@@ -188,7 +223,7 @@
       <p>Sálvate a ti mismo, porque nadie lo hará por ti.</p>
 
 <!--   <hr class="birds"> -->
-<!-- 
+    
     <hr class="dotted">
     
     <h2>Agradecimientos</h2>
@@ -198,8 +233,7 @@
       punto de vista y su apoyo.</p>
       <p>Gracias también a que el mundo ha cambiado para bien y existen congresos donde las mujeres participamos cada vez más: <a href="https://www.youtube.com/watch?v=iTu9E2fVh70">vídeo recomendado</a></p>
       <p>Por último agradecer a las amigas y amigos que accedieron a revisar el borrador de este escrito para mejorarlo antes de su publicación en internet.</p>
--->
-      <!--
+<!--
       <div class="avatar" >
         <img src="bunny.png" alt="Bunny ASCii art.">
         <img src="bunny2.png" class="img-top" alt="Bunny with hearts ASCii art.">
@@ -211,6 +245,7 @@
 <!--
     <h2>Libro para combatir el ambiente laboral tóxico</h2>
 -->    
+      <img src="book-resources/portada.png" alt="Book and ebook cover.">
       <p>
         <a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a>
         <a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a>
