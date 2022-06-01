@@ -88,12 +88,6 @@
       width: 100%;
       padding: 20px;
     }
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background: #ddd;
-    }
 
     /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 700px) {
@@ -109,6 +103,30 @@
         width: 100%;
       }
     }
+
+  /* Footer */
+  .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    .link1 {
+      font-weight: bold;
+      border: none;
+      color: #252450;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      text-decoration: underline;    
+    }
+    .link1:hover {
+      color: #d6af62;
+    }    
   </style>
 </head>
 
@@ -137,6 +155,14 @@
         </a>
       </p>
   
+      <div class="footer">
+        <p>
+          <a href="https://github.com/pauloba" class="link1">Github</a>
+          <a href="https://stackoverflow.com/users/3009085/shibboleet" class="link1">Stackoverflow</a>
+          <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez/" class="link1">Linkedin</a>
+        </p>
+      </div>
+
   </div>
 </body>
 </html>
