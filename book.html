@@ -6,164 +6,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      * {
-        box-sizing: border-box;
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* https://diybookcovers.com/3Dmockups/# */
+
+    /* Style the body */
+    body {
+      font-family : "Ubuntu";
+      src: url('Ubuntu.woff');
+      margin: 0;
+      color: #252450;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #252450;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: #d6af62;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* Change color on hover  - navbar */
+    .navbar a:hover {
+      background-color: #d6af62;
+      color: #252450;
+    }
+
+    /* Column container */
+    .row {  
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Dotted border - hr text sepparator */
+    hr.dotted {
+      border-top: 3px dotted #bbb;
+      border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
+    }
+
+    /* birds background image - hr text sepparator */
+    hr.birds {
+      border-top: 0px;
+      border-bottom: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      height: 60px;
+      background-image: url("book-resources/birds.png");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {   
+      -ms-flex: 70%; /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Image class */
+    .image-style {
+      background-color: #fff;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {   
+        flex-direction: column;
       }
-  
-      /* https://diybookcovers.com/3Dmockups/# */
-  
-      /* Style the body */
-      body {
-        font-family : "Ubuntu";
-        src: url('Ubuntu.woff');
-        margin: 0;
-        color: #494949;
-      }
-  
-      /* Header/logo Title */
-      .header {
-        padding: 10px;
-        text-align: center;
-        color: white;
-      }
-  
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      /* Increase the font size of the heading */
-      .header h1 {
-        font-size: 40px;
-      }
-  
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #585a5a;
-      }
-  
-      /* Style the navigation bar links */
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
       .navbar a {
-        float: left;
-        display: block;
-        color: #9dc0a0;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-  
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-  
-      /* Change color on hover  - navbar */
-      .navbar a:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-  
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-  
-      /* Dotted border - hr text sepparator */
-      hr.dotted {
-        border-top: 3px dotted #bbb;
-        border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
-      }
-  
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        -ms-flex: 30%; /* IE10 */
-        flex: 30%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-  
-      /* Main column */
-      .main {   
-        -ms-flex: 70%; /* IE10 */
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-      }
-  
-      /* Image class */
-      .image-style {
-        background-color: #fff;
+        float: none;
         width: 100%;
-        padding: 20px;
       }
-  
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row {   
-          flex-direction: column;
-        }
-      }
-  
-      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
-        .navbar a {
-          float: none;
-          width: 100%;
-        }
-      }
-  
-      .button1 {
-        font-weight: bold;
-        background-color: #585a5a;
-        border: none;
-        color: #9dc0a0;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 12px;
-      }
-      .button1:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-  
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-      }
-  
-      .link1 {
-        font-weight: bold;
-        border: none;
-        color: #494949;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        text-decoration: underline;    
-      }
-      .link1:hover {
-        color: #9dc0a0;
-      }  
-    </style>
+    }
+
+    .button1 {
+      font-weight: bold;
+      background-color: #252450;
+      border: none;
+      color: #d6af62;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+    .button1:hover {
+      background-color: #d6af62;
+      color: #252450;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    .link1 {
+      font-weight: bold;
+      border: none;
+      color: #252450;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      text-decoration: underline;    
+    }
+    .link1:hover {
+      color: #d6af62;
+    }
+    .padded10 {
+      padding: 10px;
+    } 
+  </style>
 </head>
 
 
@@ -175,73 +190,84 @@
     <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez" target="_blank" rel="noreferrer noopener"><h3>Contacta conmigo</h3></a>
   </div>
 
-<div class="row">
-  <div class="side">
-    <img src="book-resources/portada.png" alt="Book and ebook cover.">
-    
-    <h2>Sobre mi</h2>
-      <p>Me llamo Paula, y soy ingeniera informática.</p> 
-      <p>He creado este espacio para publicar un libro sobre acoso laboral.</p> 
-      <p>Mi única intención es que la información que he compilado en el libro esté disponible de forma gratuita y accesible para todas las personas que quieran leerla.</p> 
-      <p>Si esto ayuda, aunque solo sea a una persona, mi objetivo se habrá cumplido.</p>
+  <div class="row">
+    /* Left column content */
+    <div class="side">
+      <img src="https://pauloba.github.io/book-resources/portada.png" alt="Book and ebook cover.">
 
-    <!--  <hr class="birds"> -->
-    <hr class="dotted">
-    
-    <h2>Disclaimer</h2>
-      <p>No soy profesional de la salud, si te sientes identificado con algo de lo descrito en el libro, busca ayuda psicológica profesional.</p>
-      <p>Eliminar a la maltratadora/maltratador de tu vida, es el paso 0 para la desintoxicación mental y la curación.</p>
-      <p>Sálvate a ti mismo, porque nadie lo hará por ti.</p>
-  </div>
+      <div class="padded10">
+      <h2>Sobre mi</h2>
+      </div>
+      <div class="padded10">
+        <p>Me llamo Paula, y soy ingeniera informática.</p> 
+        <p>He creado este espacio para publicar un libro sobre acoso laboral.</p> 
+        <p>Mi única intención es que la información que he compilado en el libro esté disponible de forma gratuita y accesible para todas las personas que quieran leerla.</p> 
+        <p>Si esto ayuda, aunque solo sea a una persona, mi objetivo se habrá cumplido.</p>
+      </div>
+      
+      <div class="padded10">
+      <h2>Disclaimer</h2>
+      </div>
+      <div class="padded10">
+        <p>No soy profesional de la salud, si te sientes identificado con algo de lo descrito en el libro, busca ayuda psicológica profesional.</p>
+        <p>Eliminar a la maltratadora/maltratador de tu vida, es el paso 0 para la desintoxicación mental y la curación.</p>
+        <p>Sálvate a ti mismo, porque nadie lo hará por ti.</p>
+      </div>
+    </div>
   
+  /* Right column content */  
   <div class="main">
-      <p>
+
+      <div class="padded10">
         <a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a>
         <a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a>
-      </p>
-            
-      <p>Este es un libro para combatir el ambiente laboral tóxico escrito desde el crecimiento post traumático de haber trabajado varios años en una empresa podrida.</p>
-      <p>Si te identificas con esta situación quizás el libro puede resultarte interesante.</p> 
-      <p>El libro se divide en VII capítulos:</p> 
-            
-      <ul style="line-height:180%">
-        <li>El capítulo I explica el contenido del libro, por si quieres ir directamente a alguna parte específica:
-          <ul><li>Capítulo I, A quien va dirigido este escrito.</li></ul>
-          <ul><li>Capítulo I, Contenido del libro.</li></ul>
-        </li>
-        
-        <li>Los capítulos II y III revisan una parte de la historia del feminismo de la mano del filósofo noruego Ingjald Nissen y la política feminista Berit Ås:
-          <ul><li>Capítulo II, Qué son las MST.</li></ul>
-          <ul><li>Capítulo III, Las MST de Berit Ås.</li></ul>
-        </li>
+      </div>
+    
+      <div class="padded10">
+        <p>Este es un libro para combatir el ambiente laboral tóxico escrito desde el crecimiento post traumático de haber trabajado varios años en una empresa podrida.</p>
+        <p>Si te identificas con esta situación quizás el libro puede resultarte interesante.</p> 
+        <p>El libro se divide en VII capítulos:</p> 
+              
+        <ul style="line-height:180%">
+          <li>El capítulo I explica el contenido del libro, por si quieres ir directamente a alguna parte específica:
+            <ul><li>Capítulo I, A quien va dirigido este escrito.</li></ul>
+            <ul><li>Capítulo I, Contenido del libro.</li></ul>
+          </li>
+          
+          <li>Los capítulos II y III revisan una parte de la historia del feminismo de la mano del filósofo noruego Ingjald Nissen y la política feminista Berit Ås:
+            <ul><li>Capítulo II, Qué son las MST.</li></ul>
+            <ul><li>Capítulo III, Las MST de Berit Ås.</li></ul>
+          </li>
 
-        <li>El capítulo IV versa sobre contramedidas para combatir la manipulación:
-          <ul><li>Capítulo IV, Contramedidas para combatir las Master Suppression Techniques. </li></ul>
-        </li>
+          <li>El capítulo IV versa sobre contramedidas para combatir la manipulación:
+            <ul><li>Capítulo IV, Contramedidas para combatir las Master Suppression Techniques. </li></ul>
+          </li>
 
-        <li>El capítulo V habla sobre acoso y microagresiones:
-          <ul>
-            <li>Capítulo V, Micromachismo.</li>
-              <ul><li>Esta sección es una entrevista a Luis Bonino, psicoterapeuta experto en salud mental y cuestiones de género.</li></ul>
-            
-            <li>Capítulo V, Princesas y heroínas.</li>
-              <ul><li>Post de Teresa Busto, ingeniera industrial de Airbus, que escribe sobre machismo en su trayectoria profesional.</li></ul>
-          </ul>
-        </li>
+          <li>El capítulo V habla sobre acoso y microagresiones:
+            <ul>
+              <li>Capítulo V, Micromachismo.</li>
+                <ul><li>Esta sección es una entrevista a Luis Bonino, psicoterapeuta experto en salud mental y cuestiones de género.</li></ul>
+              
+              <li>Capítulo V, Princesas y heroínas.</li>
+                <ul><li>Post de Teresa Busto, ingeniera industrial de Airbus, que escribe sobre machismo en su trayectoria profesional.</li></ul>
+            </ul>
+          </li>
 
-        <li>El capítulo VI se enfoca en el entorno laboral moderno. Contiene información útil y ejemplos prácticos para superar el acoso laboral y encontrar un nuevo empleo:
-          <ul><li>Capítulo VI, Ejercicios prácticos para desarrollar la inteligencia emocional.</li></ul>  
-          <ul><li>Capítulo VI, Tips para encontrar empleo en el entorno IT.</li></ul>
-        </li>
+          <li>El capítulo VI se enfoca en el entorno laboral moderno. Contiene información útil y ejemplos prácticos para superar el acoso laboral y encontrar un nuevo empleo:
+            <ul><li>Capítulo VI, Ejercicios prácticos para desarrollar la inteligencia emocional.</li></ul>  
+            <ul><li>Capítulo VI, Tips para encontrar empleo en el entorno IT.</li></ul>
+          </li>
 
-        <li>Y por último, el capítulo VII contiene algunas reflexiones generales basadas en dos fábulas modernas bastante populares:
-          <ul><li>Capítulo VII, Reflexiones.</li></ul>
-        </li>
-             
-        <li>El final del libro es un compendio de todas las URLs usadas como material de consulta:
-          <ul><li>Bibliografía.</li></ul>
-        </li>
-      </ul>
+          <li>Y por último, el capítulo VII contiene algunas reflexiones generales basadas en dos fábulas modernas bastante populares:
+            <ul><li>Capítulo VII, Reflexiones.</li></ul>
+          </li>
+              
+          <li>El final del libro es un compendio de todas las URLs usadas como material de consulta:
+            <ul><li>Bibliografía.</li></ul>
+          </li>
+        </ul>
+      </div>
+      
     </div>
   </div>
 </div>
