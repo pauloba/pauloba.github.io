@@ -6,176 +6,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* https://diybookcovers.com/3Dmockups/# */
-
-    /* Style the body */
-    body {
-      font-family : "Ubuntu";
-      src: url('Ubuntu.woff');
-      margin: 0;
-      color: #252450;
-    }
-
-    /* Header/logo Title */
-    .header {
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Increase the font size of the heading */
-    .header h1 {
-      font-size: 40px;
-    }
-
-    /* Style the top navigation bar */
-    .navbar {
-      overflow: hidden;
-      background-color: #252450;
-    }
-
-    /* Style the navigation bar links */
-    .navbar a {
-      float: left;
-      display: block;
-      color: #d6af62;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-
-    /* Right-aligned link */
-    .navbar a.right {
-      float: right;
-    }
-
-    /* Change color on hover  - navbar */
-    .navbar a:hover {
-      background-color: #d6af62;
-      color: #252450;
-    }
-
-    /* Column container */
-    .row {  
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-    }
-
-    /* Dotted border - hr text sepparator */
-    hr.dotted {
-      border-top: 3px dotted #bbb;
-      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
-    }
-
-    /* birds background image - hr text sepparator */
-    hr.birds {
-      border-top: 0px;
-      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      height: 60px;
-      background-image: url("book-resources/birds.png");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
-
-    /* Create two unequal columns that sits next to each other */
-    /* Sidebar/left column */
-    .side {
-      -ms-flex: 30%; /* IE10 */
-      flex: 30%;
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-
-    /* Main column */
-    .main {   
-      -ms-flex: 70%; /* IE10 */
-      flex: 70%;
-      background-color: white;
-      padding: 20px;
-    }
-
-    /* Image class */
-    .image-style {
-      background-color: #fff;
-      width: 100%;
-      padding: 20px;
-    }
-
-    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 700px) {
-      .row {   
-        flex-direction: column;
+    <style>
+      * {
+        box-sizing: border-box;
       }
-    }
-
-    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
+  
+      /* https://diybookcovers.com/3Dmockups/# */
+  
+      /* Style the body */
+      body {
+        font-family : "Ubuntu";
+        src: url('Ubuntu.woff');
+        margin: 0;
+        color: #494949;
+      }
+  
+      /* Header/logo Title */
+      .header {
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+  
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      /* Increase the font size of the heading */
+      .header h1 {
+        font-size: 40px;
+      }
+  
+      /* Style the top navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #585a5a;
+      }
+  
+      /* Style the navigation bar links */
       .navbar a {
-        float: none;
-        width: 100%;
+        float: left;
+        display: block;
+        color: #9dc0a0;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
       }
-    }
-
-    .button1 {
-      font-weight: bold;
-      background-color: #252450;
-      border: none;
-      color: #d6af62;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
-    }
-    .button1:hover {
-      background-color: #d6af62;
-      color: #252450;
-    }
-
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background: #ddd;
-    }
-
-    .link1 {
-      font-weight: bold;
-      border: none;
-      color: #252450;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      text-decoration: underline;    
-    }
-    .link1:hover {
-      color: #d6af62;
-    }
-  </style>
+  
+      /* Right-aligned link */
+      .navbar a.right {
+        float: right;
+      }
+  
+      /* Change color on hover  - navbar */
+      .navbar a:hover {
+        background-color: #9dc0a0;
+        color: #585a5a;
+      }
+  
+      /* Column container */
+      .row {  
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+  
+      /* Dotted border - hr text sepparator */
+      hr.dotted {
+        border-top: 3px dotted #bbb;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+      }
+  
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+  
+      /* Main column */
+      .main {   
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+  
+      /* Image class */
+      .image-style {
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+      }
+  
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {   
+          flex-direction: column;
+        }
+      }
+  
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+  
+      .button1 {
+        font-weight: bold;
+        background-color: #585a5a;
+        border: none;
+        color: #9dc0a0;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+      }
+      .button1:hover {
+        background-color: #9dc0a0;
+        color: #585a5a;
+      }
+  
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+  
+      .link1 {
+        font-weight: bold;
+        border: none;
+        color: #494949;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-decoration: underline;    
+      }
+      .link1:hover {
+        color: #9dc0a0;
+      }  
+    </style>
 </head>
 
 
