@@ -106,7 +106,26 @@
       .padded30 {
        padding: 30px;
        } 
-  
+
+    /* Image - hover effect */
+    .thumbnail-arrow {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: block;
+        margin-left: 30px;
+        margin-right: auto;
+    }
+    .thumbnail-arrow .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .thumbnail-arrow:hover .img-top {
+        display: inline;
+    }
     </style>
 </head>
 
@@ -135,7 +154,7 @@
         </p>
       
         <p>My take on the "tea house" gmail theme converted to a 1920x1081 jpg wallpaper.</p>
-        <p>The base images used for the Tea House wallpaper <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes">are these ones</a>.</p>
+        <p>The base images used for the Tea House wallpaper <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes" class="link1"  target="_blank" rel="noreferrer noopener">are these ones</a>.</p>
     </div>
 
     <div class="padded30">
@@ -144,9 +163,24 @@
             <img border="0" alt="Thumbnail Zelda wallpaper" src="art-resources/thumb1.jpg" width="200" height="100">
           </a>
         </p>
- 
-        <p>A 3200x1800 jpg experiment wallpaper based on the Misery Mire level from the videogame Zelda a link to the past.</p>
+
+
+        <div class="thumbnail-arrow" >
+
+          <a href="art-resources/wallpaper1.jpg"> 
+            <img border="0" alt="Thumbnail Zelda wallpaper" src="art-resources/thumb1.jpg" alt="CV thumbnail" width="200" height="100">
+          </a>    
+          <a href="art-resources/wallpaper1.jpg"> 
+            <img border="0" alt="Thumbnail Zelda wallpaper" src="art-resources/thumb1-arrow.jpg" class="img-top" width="200" height="100">
+          </a>
+              
+        </div>      
+
+      </div>
+
+      <p>A 3200x1800 jpg experiment wallpaper based on the Misery Mire level from the videogame Zelda a link to the past.</p>
   </div>
+
 </div>
 
   <div class="footer">
