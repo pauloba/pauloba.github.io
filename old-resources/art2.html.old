@@ -195,25 +195,7 @@
         
         <p>A 3200x1800 jpg experiment wallpaper based on the Misery Mire level from the videogame Zelda a link to the past.</p>
 
-    </div>
-
-    <div class="padded30">
-
-      <div class="thumbnail-arrow" >
-
-        <a href="art-resources/wallpaper2.jpg"> 
-          <img border="0" alt="Thumbnail Devops universe wallpaper" src="art-resources/thumb2.jpg" width="200" height="100">
-        </a>
-
-        <a href="art-resources/wallpaper2.jpg"> 
-          <img border="0" alt="Thumbnail Devops universer wallpaper" src="art-resources/thumb2-arrow.jpg" class="img-top" width="200" height="100">
-        </a>
-
-      </div>      
-      
-      <p>A 1920x1080 jpg wallpaper based on random wallpapers I found on the internet with a common theme, the Devops Universe.</p>
-
-  </div>
+      </div>
 
   </div>
 
