@@ -75,13 +75,6 @@
         padding: 20px;
       }
   
-      /* Image class */
-      .image-style {
-        background-color: #fff;
-        width: 100%;
-        padding: 20px;
-      }
-  
       /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 700px) {
         .row {   
@@ -103,7 +96,7 @@
         text-align: center;
         background: #ddd;
       }
-  
+
     .link1 {
       font-weight: bold;
       border: none;
@@ -127,77 +120,57 @@
     .padded20 {
       padding: 20px;
     }  
-    /* CV image - hover effect */
-    .cvthumbnail {
-        width: 130px;
-        height: 195px;
-        position: relative;
-        display: block;
-        margin-left: 30px;
-        margin-right: auto;
-    }
-    .cvthumbnail .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .cvthumbnail:hover .img-top {
-        display: inline;
-    }
   </style>  
 </head>
 
 
 <body>
-  <div class="navbar">
-    <a href="#me"><h3>About me</h3></a>
-    <a href="#cv"><h3>Career</h3></a>
-    <a href="art.html"><h3>Art</h3></a>
-    <a href="book.html"><h3>Book</h3></a>  
-    <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez" target="_blank" rel="noreferrer noopener"><h3>Contact me</h3></a>
-  </div>
   
   <div class="main">
-    
     <div class="padded20">
-      <h2 id=me>About me</h2>
+      <img border="0" alt="Spanish flag" src="offers-resources/spain-flag.png" width="200" height="100">
+      <h2>Querido/a recruiter técnico:</h2>
     </div>
 
     <div class="padded20">
-      <p>My name is Paula, I am a Cloud engineer currently living in the sunny Barcelona.</p>  
-      <p>I have a degree in Computer science from Vigo University.</p>
-      <p>In 2017 I got into Cloud Computing and I've been working with: Docker, K8s, Istio, Terraform, Helm, Jenkins.</p>
-      <p>I have hands-on experience in technical support and system administration, especially with GCP.</p> 
-      <p>I am always open to feedback and I listen actively to all opinions and points of view.</p>
-      <p>I'm a tech oriented person with a logical and practical mindset, self-organized and with good documentation skills.</p>
-      <p>I have a collaborative mindset, I believe in teamplay as a life strategy.</p>
-      <p>I am currently open to listen to remote Cloud sysadmin job opportunities. </p>
-      <div class="padded30">
-        <img border="0" alt="resume" src="main-resources/signature.png">      
+      <p>Si me envías un mensaje con una oferta de empleo y esperas que invierta mi tiempo en responder, por favor lee las siguientes directrices.</p> <p>La oferta debe incluír:</p>
+      <p>
+        <ul style="line-height:180%">
+          <li>La descripción y el nombre de la empresa, con enlaces reales a la misma.</li>
+          <li>Una descripción precisa del puesto de trabajo, con las responsabilidades a adquirir y el perfil concreto deseado, no un listado de "buzzwords" sacadas de Linkedin. 
+            <ul><li>Si buscas ninjas/rockstars expertos en PHP, Python, Ruby, Java, C#, Angular, NodeJS, Bash, Photoshop, Illustrator, CSS, iOS, Android, BigData, AWS, Azure y configuración de redes: no me interesa.</li></ul>
+          </li>
+          <li>La oferta debe incluir sueldo, o al menos rango salarial(con sentido, nada de "entre 20K y 60K").</li>  
+        </ul>
+      </p>
+        
+      <p>
+        Estas son unas directrices basadas en nettiqueta básica, inspiradas por <a href="https://lists.es.python.org/pipermail/general/2016-October/003294.html">este mensaje de una lista de correo de Python</a>. 
+       </p>
+    </div>
+
+    <div class="padded20">
+      <img border="0" alt="UK flag" src="offers-resources/uk-flag.png" width="200" height="100">
+      <h2 id=me>Dear tech recruiter:</h2>
+    </div>
+
+    <div class="padded20">
+        <p>If you send me a message with a job offer and you expect me to invest my time in answering, please read the following guidelines.</p> <p>The job offer must include:</p>
+        <p>
+          <ul style="line-height:180%">
+            <li>The name and description of the company, with real links to their website.</li>
+            <li>An accurate description of the possition, with the responsabilities to be acquired and the specific profile desired, not a list of "buzzwords" taken from Linkedin.
+                <ul><li>If you are looking for expert ninjas/rockstars in PHP, Python, Ruby, Java, C#, Angular, NodeJS, Bash, Photoshop, Illustrator, CSS, iOS, Android, BigData, AWS, Azure and network configuration: I'm not interested.</li></ul>
+             </li>
+             <li>The salary, or at least a salary range (one that makes sense, please avoid non-sense ranges like "between 20k and 60k").</li>  
+           </ul>
+         </p>
+        
+         <p>
+          These are guidelines based on basic netiquette, inspired by <a href="https://lists.es.python.org/pipermail/general/2016-October/003294.html"> this message from a Python maillist</a>.
+        </p>
+           
       </div>
-
-    </div>
-
-    <div class="padded20">
-      <h2 id=cv>Career</h2>
-    </div>
-
-    <div class="padded30">
-      <p> Click the image to download my resume. </p>
- 
-      <div class="padded30">
-        <div class="cvthumbnail" >
-          <a href="main-resources/resume.pdf"> 
-            <img border="0" alt="resume" src="main-resources/resume.png" alt="CV thumbnail" width="150" height="200">
-          </a>    
-          <a href="main-resources/resume.pdf"> 
-            <img border="0" alt="resume" src="main-resources/resume-arrow.png" class="img-top" alt="CV thumbnail" width="150" height="200">
-          </a>    
-        </div>      
-      </div>      
-    </div>
     
   </div>
 
