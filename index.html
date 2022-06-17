@@ -61,16 +61,16 @@
       /* Create two unequal columns that sits next to each other */
       /* Sidebar/left column */
       .side {
-        -ms-flex: 30%; /* IE10 */
-        flex: 30%;
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
         background-color: white;
         padding: 20px;
       }
   
       /* Main column */
       .main {   
-        -ms-flex: 70%; /* IE10 */
-        flex: 70%;
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
         background-color: #f1f1f1;
         padding: 20px;
       }
@@ -152,16 +152,17 @@
 
 <body>
   <div class="navbar">
-    <a href="#me"><h3>About me</h3></a>
-    <a href="#cv"><h3>Career</h3></a>
+    <!-- <a href="#me"><h3>About me</h3></a>
+    <a href="#cv"><h3>Career</h3></a> -->
     <a href="offers.html"><h3>Readme</h3></a>
     <a href="art.html"><h3>Art</h3></a>
     <a href="book.html"><h3>Book</h3></a>  
     <a href="https://www.linkedin.com/in/paula-rodr%C3%ADguez" target="_blank" rel="noreferrer noopener"><h3>Contact me</h3></a>
   </div>
-  
-  <div class="main">
     
+  <div class="row">
+    <div class="side">
+
     <div class="padded20">
       <h2 id=me>About me</h2>
     </div>
@@ -180,7 +181,9 @@
       </div>
 
     </div>
+  </div>
 
+  <div class="main">
     <div class="padded20">
       <h2 id=cv>Career</h2>
     </div>
@@ -199,8 +202,9 @@
         </div>      
       </div>      
     </div>
-    
   </div>
+  
+</div>
 
   <div class="footer">
     <p>
