@@ -52,18 +52,29 @@
         background-color: #9dc0a0;
         color: #585a5a;
       }
-      /* Main column */
-      .main {   
-        -ms-flex: 70%; /* IE10 */
-        flex: 70%;
-        background-color: #f1f1f1;
+      /* Column container */
+      .row {  
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+  
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        background-color: white;
         padding: 20px;
       }
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
+  
+      /* Main column */
+      .main {   
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        background-color: #f1f1f1;
+        padding: 20px;
       }
   
       /* Clear floats after the columns */
@@ -147,39 +158,43 @@
     <a href="index.html"><h3>Back to main</h3></a>
   </div>
     
-  <div class="main">
+  <div class="row">
+    <div class="side">
 
-    <div class="padded-mixed">
-      <h2>Wallpapers</h2>
-    </div>
-
-    <div class="padded-mixed">
-      <p> Click the images to download the wallpapers. </p>
-      <p> Disclaimer: I made this with Gimp on my free time just for fun. </p>
-      <p> I am not the designer of the images, if you are the author and you want me to take the wallpapers down, send me a message. </p>
-    </div>
-
-    <div class="padded-mixed">
-      
-      <div class="thumbnail-arrow" >
-
-        <a href="art-resources/wallpaper0.jpg"> 
-          <img border="0" alt="Thumbnail Tea House wallpaper" src="art-resources/thumb0.jpg" width="200" height="100">
-        </a>    
-
-        <a href="art-resources/wallpaper0.jpg"> 
-          <img border="0" alt="Thumbnail Tea House wallpaper" src="art-resources/thumb0-arrow.jpg" class="img-top" width="200" height="100">
-        </a>
-
+      <div class="padded-mixed">
+        <h2>Wallpapers</h2>
       </div>
-      
-        <p>My take on the "tea house" gmail theme converted to a 1920x1081 jpg wallpaper.</p>
-        <p>The base images used for the Tea House wallpaper <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes" class="link2"  target="_blank" rel="noreferrer noopener">are these ones</a>.</p>
-        <p>Jason made a dynamic wallpaper that changes throughout the course of the day showing the different scenes of the classic Tea House fox.</p>
-        <p>Check out <a href="https://jbmorley.co.uk/posts/2022-06-14-revisiting-googles-tea-house" class="link2"  target="_blank" rel="noreferrer noopener">Jason's automatic changing wallpaper</a></p>
-    </div>
 
-    <div class="padded-mixed">
+      <div class="padded-mixed">
+        <p> Click the images to download the wallpapers. </p>
+        <p> Disclaimer: I made this with Gimp on my free time just for fun. </p>
+        <p> I am not the designer of the images, if you are the author and you want me to take the wallpapers down, send me a message. </p>
+      </div>
+
+      <div class="padded-mixed">
+      
+        <div class="thumbnail-arrow" >
+
+          <a href="art-resources/wallpaper0.jpg"> 
+            <img border="0" alt="Thumbnail Tea House wallpaper" src="art-resources/thumb0.jpg" width="200" height="100">
+          </a>    
+
+          <a href="art-resources/wallpaper0.jpg"> 
+            <img border="0" alt="Thumbnail Tea House wallpaper" src="art-resources/thumb0-arrow.jpg" class="img-top" width="200" height="100">
+          </a>
+
+        </div>
+      
+          <p>My take on the "tea house" gmail theme converted to a 1920x1081 jpg wallpaper.</p>
+          <p>The base images used for the Tea House wallpaper <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes" class="link2"  target="_blank" rel="noreferrer noopener">are these ones</a>.</p>
+          <p>Jason made a dynamic wallpaper that changes throughout the course of the day showing the different scenes of the classic Tea House fox.</p>
+          <p>Check out <a href="https://jbmorley.co.uk/posts/2022-06-14-revisiting-googles-tea-house" class="link2"  target="_blank" rel="noreferrer noopener">Jason's automatic changing wallpaper</a></p>
+      </div>
+    </div>
+    
+    <div class="main">
+
+      <div class="padded-mixed">
 
         <div class="thumbnail-arrow" >
 
@@ -195,26 +210,26 @@
         
         <p>A 3200x1800 jpg experiment wallpaper based on the Misery Mire level from the videogame Zelda a link to the past.</p>
 
-    </div>
+      </div>
 
-    <div class="padded-mixed">
+      <div class="padded-mixed">
 
-      <div class="thumbnail-arrow" >
+        <div class="thumbnail-arrow" >
 
-        <a href="art-resources/wallpaper2.jpg"> 
-          <img border="0" alt="Thumbnail Devops universe wallpaper" src="art-resources/thumb2.jpg" width="200" height="100">
-        </a>
+          <a href="art-resources/wallpaper2.jpg"> 
+            <img border="0" alt="Thumbnail Devops universe wallpaper" src="art-resources/thumb2.jpg" width="200" height="100">
+          </a>
 
-        <a href="art-resources/wallpaper2.jpg"> 
-          <img border="0" alt="Thumbnail Devops universe wallpaper" src="art-resources/thumb2-arrow.jpg" class="img-top" width="200" height="100">
-        </a>
+          <a href="art-resources/wallpaper2.jpg"> 
+            <img border="0" alt="Thumbnail Devops universe wallpaper" src="art-resources/thumb2-arrow.jpg" class="img-top" width="200" height="100">
+          </a>
 
-      </div>      
+        </div>      
       
-      <p>A 1920x1080 jpg wallpaper based on random images I found on the internet with a common theme, the DevOps Universe.</p>
-      <p>The wallpaper includes a meme and a visual joke with a drunk astrounaut as well as several references to DevOps tools and technologies.</p>
+        <p>A 1920x1080 jpg wallpaper based on random images I found on the internet with a common theme, the DevOps Universe.</p>
+        <p>The wallpaper includes a meme and a visual joke with a drunk astrounaut as well as several references to DevOps tools and technologies.</p>
 
-  </div>
+      </div>
 
   </div>
 
