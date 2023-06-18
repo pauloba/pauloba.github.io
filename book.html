@@ -151,7 +151,21 @@
       background-color: #d6af62;
       color: #252450;
     }
-
+/* Invisible button same color as background to wrap around mastodon button */
+    .button2 {
+      font-weight: bold;
+      background-color: #ffffff;
+      border: none;
+      color: #ffffff;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
     /* Footer */
     .footer {
       padding: 20px;
@@ -186,7 +200,6 @@
 
   <div class="navbar">
     <a href="index.html"><h3>Atrás</h3></a>
-    <a class="twitter-share" href="https://twitter.com/intent/tweet?text=Descubre%20el%20libro%20gratuito%20de%20Paula%20para%20combatir%20el%20entorno%20laboral%20tóxico%20https://pauloba.github.io/%20%23MandarAlaMierdaEsMuySano" target="_blank" rel="noreferrer noopener"><h3>Comparte en Twitter</h3></a>  
   </div>
 
   <div class="row">
@@ -219,6 +232,8 @@
       <div class="padded10">
         <a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a>
         <a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a>
+        <script src="https://unpkg.com/mastodon-share-button@latest/dist/mastodon-share-button.js"></script> 
+        <mastodon-share-button share_message="Descubre el libro gratuito de Paula para combatir el entorno laboral tóxico https://pauloba.github.io/book.html" dark_mode="true" class="button2"></mastodon-share-button>
       </div>
     
       <div class="padded10">
