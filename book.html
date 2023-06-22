@@ -151,21 +151,21 @@
       background-color: #d6af62;
       color: #252450;
     }
-/* Invisible button same color as background to wrap around mastodon button */
-    .button2 {
-      font-weight: bold;
-      background-color: #ffffff;
-      border: none;
-      color: #ffffff;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
-    }
+/* Inline-block to display the download and share to mastodon buttons horizontally, side by side. */
+/* Note: If you resize the browser window, the links will automatically break when it becomes too crowded. */
+  .nav {
+    background-color: none; 
+  	list-style-type: none;
+  	text-align: center;
+  	margin: 0;
+  	padding: 0;
+	}
+
+	.nav li {
+  	display: inline-block;
+  	font-size: 20px;
+  	padding: 20px;
+	}
     /* Footer */
     .footer {
       padding: 20px;
@@ -230,10 +230,12 @@
   <div class="main">
 
       <div class="padded10">
-        <a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a>
-        <a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a>
-        <script src="https://unpkg.com/mastodon-share-button@latest/dist/mastodon-share-button.js"></script> 
-        <mastodon-share-button share_message="Descubre el libro gratuito de Paula para combatir el entorno laboral tóxico https://pauloba.github.io/book.html" dark_mode="true" class="button2"></mastodon-share-button>
+        <ul class="nav">
+          <li><a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a></li>
+            <li><a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a></li>
+            <li><script src="https://unpkg.com/mastodon-share-button@latest/dist/mastodon-share-button.js"></script> 
+          <mastodon-share-button share_message="Descubre el libro gratuito de Paula para combatir el entorno laboral tóxico https://pauloba.github.io/book.html" dark_mode="true" class="button2"></mastodon-share-button></li>
+          </ul>
       </div>
     
       <div class="padded10">
