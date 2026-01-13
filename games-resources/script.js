@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	let games = [];
 
 	// Load games from data.json
-	fetch('data.json')
+	fetch('game-resources/data.json')
 		.then(response => response.json())
 		.then(data => {
 			games = data;
