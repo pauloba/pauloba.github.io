@@ -24,12 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	let games = [];
 
 	// Load games from data.json
-	fetch('./data.json')
+	fetch('games-resources/data.json')
 		.then(response => response.json())
 		.then(data => {
 			games = data;
 		})
 		.catch(err => {
+			console.error('Error loading games:', err);
 			resultsContainer.textContent = 'Failed to load games data.';
 		});
 
@@ -81,11 +82,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Helper to format expansion field (handles object with any number of elements)
 	function formatExpansion(expansion) {
-		if (!expansion || typeof expansion !== 'object') return '';
-		// Filter out keys whose value is 'No' or falsy
-		const items = Object.values(expansion).filter(val => val && val !== 'No');
-		if (items.length === 0) return '';
-		return `<p><strong>Expansions:</strong><br>${items.join('<br>')}</p>`;
+	if (!expansion || typeof expansion !== 'object') return '';
+	
+	// Filter out 'No' values and falsy entries
+	const items = Object.values(expansion).filter(item => {
+		if (item === 'No' || !item) return false;
+		// Accept both new object format and old string format
+		return typeof item === 'string' || (typeof item === 'object' && item.title);
+	});
+	
+	if (items.length === 0) return '';
+	
+	// Format each expansion item
+	const formattedItems = items.map(item => {
+		if (typeof item === 'object' && item.title) {
+		// New format: {title, description}
+		return `<strong>${item.title}</strong>: ${item.description}`;
+		}
+		// Fallback for old string format
+		return item;
+	});
+	
+	return `<p><strong>Expansions:</strong><br>${formattedItems.join('<br>')}</p>`;
 	}
 });
 

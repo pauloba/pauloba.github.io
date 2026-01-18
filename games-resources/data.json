@@ -10,10 +10,22 @@
     "age": 8,
     "complexity": 1.77,
     "expansion": {
-      "e1": "Crystal mosaic (2020): includes 2 extra boards, I made a PnP version.",
-      "e2": "Special factories (2022): all factories from Azul Chocolatier version, I also made a PnP.",
-      "e3": "Solo mode: https://www.tarpeygames.com/azul/azul-angry-king",
-      "e4": "Cooperative mode: https://www.tarpeygames.com/azul/azul-tile-guild"
+      "e1": {
+        "title": "Crystal mosaic (2020)",
+        "description": "includes 2 extra boards, I made a PnP version."
+      },
+      "e2": {
+        "title": "Special factories (2022)",
+        "description": "all factories from Azul Chocolatier version, I made a PnP."
+      },
+      "e3": {
+        "title": "Solo mode",
+        "description": "https://www.tarpeygames.com/azul/azul-angry-king"
+      },
+      "e4": {
+        "title": "Cooperative mode",
+        "description": "https://www.tarpeygames.com/azul/azul-tile-guild"
+      }
     }    
   },
   {
@@ -41,8 +53,14 @@
     "age": 8,
     "complexity": 1.51,
     "expansion": {
-      "e1": "Crazy camels (2018): 1 black camel, 1 white camel that run in the opposite direction to create entropy.",
-      "e2": "The referee camel (2017): The fact that the camels in Camel Race pile up and run on together is a thorn in the side of the race organizers and is now to be prevented with the help of a referee camel The game is played as usual and supplemented by the brown referee camel. At the beginning of each stage, the player sitting to the right of the stage starter may place the referee camel on any free space on the track. If a camel unit ends its movement on the referee camel's space, all camels in this unit are asked to “unstack” and line up next to each other on this space. The camels are “unstacked” from top to bottom and lined up in the same order from left to right. (The top camel is therefore on the far left, at the outer edge of the playing field, and is considered to be the furthest forward). As soon as the camels have been “unstacked” (or a single camel has landed on the field), the referee camel is removed from the track and placed next to the game board. It is not used again until the start of the next stage. If a camel unit lands on a field of camels that have already been unstacked, it jumps onto the camel furthest to the left."
+      "e1": {
+        "title": "Crazy camels (2018)",
+        "description": "1 black camel, 1 white camel that run in the opposite direction to create entropy."
+      },
+      "e2": {
+        "title": "The referee camel (2017)",
+        "description": "The fact that the camels in Camel Race pile up and run on together is a thorn in the side of the race organizers and is now to be prevented with the help of a referee camel The game is played as usual and supplemented by the brown referee camel. At the beginning of each stage, the player sitting to the right of the stage starter may place the referee camel on any free space on the track. If a camel unit ends its movement on the referee camel's space, all camels in this unit are asked to “unstack” and line up next to each other on this space. The camels are “unstacked” from top to bottom and lined up in the same order from left to right. (The top camel is therefore on the far left, at the outer edge of the playing field, and is considered to be the furthest forward). As soon as the camels have been “unstacked” (or a single camel has landed on the field), the referee camel is removed from the track and placed next to the game board. It is not used again until the start of the next stage. If a camel unit lands on a field of camels that have already been unstacked, it jumps onto the camel furthest to the left."
+      }
     }
   },
   {
@@ -196,7 +214,18 @@
     "age": 9,
     "complexity": 2.22,
     "expansion": {
-      "e1": "Pillbug (2013): 2 new black/white pieces. The pillbug can move one space at a time OR it can move an adjacent unstacked piece (friend or enemy) two spaces: up onto the pillbug itself, then down into another empty space adjacent to itself."
+      "e1": {
+        "title": "Mosquito (2007)",
+        "description": "During the game, they are placed in the same way as the other pieces. Once in play, the Mosquito takes on the movement characteristics of any creature it touches at the time, thus changing its characteristics throughout the game."
+      },
+      "e2": {
+        "title": "Ladybug (2010)",
+        "description": "The ladybug moves exactly three spaces each turn: two spaces up onto the hive and one space down off the hive."
+      },
+      "e3": {
+        "title": "Pillbug (2013)",
+        "description": "2 new black/white pieces. The pillbug can move one space at a time OR it can move an adjacent unstacked piece (friend or enemy) two spaces: up onto the pillbug itself, then down into another empty space adjacent to itself."
+      }
     }
   },
   {
@@ -210,10 +239,22 @@
     "age": 10,
     "complexity": 2.01,
     "expansion": {
-      "e1": "Private ships (2016): adds 4 ship tokens. Once per game, a player may take 1 stone from their supply, place it on their private ship and sail the ship: all this is 1 action.",
-      "e2": "The Stonemason's Wager (2016): bet on which monument will be the grandest at the end of the game! If you are correct, you get bonus points.",
-      "e3": "The Pharaoh's Favors (2017): on your turn, instead of taking any other action, you may perform a special action listed on the card.",
-      "e4": "The Sun Ship Tiles (2019): whenever a player places a stone on a Sun Ship token, they may immediately take the associated action for that Sun Ship token. The placed stone remains on this space in either case."
+      "e1": {
+        "title": "Private ships (2016)",
+        "description": "adds 4 ship tokens. Once per game, a player may take 1 stone from their supply, place it on their private ship and sail the ship: all this is 1 action."
+      },
+      "e2": {
+        "title": "The Stonemason's Wager (2016)",
+        "description": "bet on which monument will be the grandest at the end of the game! If you are correct, you get bonus points."
+      },
+      "e3": {
+        "title": "The Pharaoh's Favors (2017)",
+        "description": "on your turn, instead of taking any other action, you may perform a special action listed on the card."
+      },
+      "e4": {
+        "title": "The Sun Ship Tiles (2019)",
+        "description": "whenever a player places a stone on a Sun Ship token, they may immediately take the associated action for that Sun Ship token. The placed stone remains on this space in either case."
+      }
     }
   },
   {
@@ -269,8 +310,14 @@
     "age": 8,
     "complexity": 1.19,
     "expansion": {
-      "e1": "Orchard Recipes (2023): 14 cards that feature recipe challenges that provide a win/lose condition as an alternative to beat your own score.",
-      "e2": "More Orchard Recipes (2025): 4 cards that feature recipe challenges for a win/lose condition."
+      "e1": {
+        "title": "Orchard Recipes (2023)",
+        "description": "14 cards that feature recipe challenges that provide a win/lose condition as an alternative to beat your own score."
+      },
+      "e2": {
+        "title": "More Orchard Recipes (2025)",
+        "description": "4 cards that feature recipe challenges for a win/lose condition."
+      }
     }
   },
   {
@@ -291,14 +338,17 @@
     "game": "Polyhedral potions",
     "year": 2022,
     "min_players": 1,
-    "max_players": 99,
+    "max_players": 6,
     "mechanics": "roll and write, set of 7 roll-dice",
     "description": "draft ingredients and mark them on score sheet; combine the ingredients to craft a potion and mark it on the potion chart. The game ends when someone earns their 3rd Star.",
     "playing_time": "30 minutes",
     "age": 14,
     "complexity": 1.50,
     "expansion": {
-      "e1": "Poison Pack (2023): whenever you mark a Poison skull, gain a Poison card. You may take either of the two revealed cards or the top card off the deck."
+      "e1": {
+      "title": "Poison Pack (2023)",
+      "description": "adds a new deck of poison cards, whenever you mark a Poison skull, gain a Poison card. You may take either of the two revealed cards or the top card off the deck."
+      }
     }
   },
   {
@@ -354,7 +404,10 @@
     "age": 10,
     "complexity": 1.25,
     "expansion": {
-      "e1": "Asesores (2021): adds a 3rd phase to the classic game, with players starting the game by bidding to hire advisors who will then assist in the second and third phases of the game when players acquire houses, then sell them."      
+      "e1": {
+        "title": "Asesores (2021)",
+        "description": "adds a 3rd phase to the classic game, with players starting the game by bidding to hire advisors who will then assist in the second and third phases of the game when players acquire houses, then sell them."      
+      }
     }
   },
   {
@@ -473,7 +526,7 @@
     "game": "Voyages",
     "year": 2021,
     "min_players": 1,
-    "max_players": 99,
+    "max_players": 10,
     "mechanics": "roll and write, bingo, multiple maps",
     "description": "open sea adventure and exploration. Each player is the captain of a vessel sailing the seas and requires a single printed game sheet and pencil, while one player also needs to provide three dice.",
     "playing_time": "30 minutes",
