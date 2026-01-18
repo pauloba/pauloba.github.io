@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const form = document.createElement('form');
 	form.innerHTML = `
 		<label>
-			<input type="radio" name="searchType" value="min" checked> Minimum players
+			<input type="radio" name="searchType" value="min" checked> Minimum players (1-5)
 		</label>
 		<label>
-			<input type="radio" name="searchType" value="max"> Maximum players
+			<input type="radio" name="searchType" value="max"> Maximum players (1-10)
 		</label>
 		<input type="number" id="playerCount" min="1" placeholder="Number of players" required>
 		<button type="submit">Search</button>
