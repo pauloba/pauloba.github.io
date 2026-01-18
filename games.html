@@ -1,342 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Paula's web - My BG collection</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
       * {
-        margin: 0;
-        padding: 0;
         box-sizing: border-box;
       }
-
+      /* Style the body */
       body {
-        font-family: Arial, sans-serif;
+        font-family : "Ubuntu";
+        src: url('Ubuntu.woff');
+        margin: 0;
+        color: #494949;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      /* Style the top navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #585a5a;
+      }
+  
+      /* Style the navigation bar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #9dc0a0;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+  
+      /* Right-aligned link */
+      .navbar a.right {
+        float: right;
+      }
+  
+      /* Change color on hover  - navbar */
+      .navbar a:hover {
+        background-color: #9dc0a0;
+        color: #585a5a;
+      }
+  
+      /* Column container */
+      .row {  
+        display: -ms-flexbox; /* IE10 */
         display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
       }
-
-      .container {
-        display: flex;
-        flex: 1;
-        gap: 0;
-        flex-direction: row;
-      }
-
-      .left-panel {
-        flex: 0 0 35%;
-        border-right: 1px solid #ccc;
-        overflow-y: auto;
+  
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        background-color: white;
         padding: 20px;
-        background-color: #f9f9f9;
       }
-
-      .right-panel {
-        flex: 1;
-        overflow-y: auto;
+  
+      /* Main column */
+      .main {   
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+        background-color: #f1f1f1;
         padding: 20px;
+      }
+  
+      /* Image class */
+      .image-style {
         background-color: #fff;
+        width: 100%;
+        padding: 20px;
       }
-
-      .left-panel h2,
-      .right-panel h2 {
-        margin-bottom: 20px;
-        font-size: 1.5em;
-        color: #333;
-      }
-
-      /* Tablet (768px - 1024px) */
-      @media (max-width: 1024px) {
-        .left-panel {
-          flex: 0 0 40%;
-          padding: 15px;
-        }
-
-        .right-panel {
-          padding: 15px;
-        }
-
-        .left-panel h2,
-        .right-panel h2 {
-          font-size: 1.3em;
-        }
-      }
-
-      /* Mobile (up to 768px) */
-      @media (max-width: 768px) {
-        .container {
+  
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {   
           flex-direction: column;
         }
-
-        .left-panel {
-          flex: 0 0 auto;
-          border-right: none;
-          border-bottom: 1px solid #ccc;
-          padding: 15px;
-          max-height: 50vh;
-        }
-
-        .right-panel {
-          flex: 1;
-          padding: 15px;
-        }
-
-        .left-panel h2,
-        .right-panel h2 {
-          font-size: 1.2em;
-          margin-bottom: 15px;
-        }
-
-        body {
-          min-height: auto;
+      }
+  
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
         }
       }
-
-      /* Small mobile (up to 480px) */
-      @media (max-width: 480px) {
-        .left-panel,
-        .right-panel {
-          padding: 10px;
-        }
-
-        .left-panel h2,
-        .right-panel h2 {
-          font-size: 1.1em;
-          margin-bottom: 10px;
-        }
+  
+    /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
       }
+  
+    .link1 {
+      font-weight: bold;
+      border: none;
+      color: #494949;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      text-decoration: underline;    
+    }
+    .link1:hover {
+      color: #9dc0a0;
+    }    
+  
+    .padded30 {
+     padding: 30px;
+    } 
+    .padded20 {
+      padding: 20px;
+    }
 
+    /* Game-specific styles */
+    #search-box,
+    #results,
+    #game-details {
+      color: #494949;
+    }
+
+    #results ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #results li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-left: 4px solid #9dc0a0;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #results li:hover {
+      background-color: #f0f8ff;
+      border-left-color: #585a5a;
+    }
+
+    .game-name {
+      font-weight: bold;
+      color: #585a5a;
+    }
+
+    #game-details h3 {
+      color: #585a5a;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+
+    #game-details p {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .no-selection {
+      color: #999;
+      font-style: italic;
+    }
+
+    form {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 12px;
+      cursor: pointer;
+      color: #585a5a;
+    }
+
+    form input[type="radio"],
+    form input[type="number"] {
+      margin-right: 8px;
+    }
+
+    form input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #9dc0a0;
+      color: #585a5a;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    form button:hover {
+      background-color: #585a5a;
+      color: #9dc0a0;
+    }
+
+    @media screen and (max-width: 700px) {
       form {
-        margin-bottom: 30px;
-        padding: 15px;
-        background-color: #fff;
-        border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      }
-
-      form label {
-        display: block;
-        margin-bottom: 12px;
-        cursor: pointer;
-        color: #555;
-      }
-
-      form input[type="radio"],
-      form input[type="number"] {
-        margin-right: 8px;
-      }
-
-      form input[type="number"] {
-        width: 100%;
-        padding: 8px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 1em;
-      }
-
-      form button {
-        width: 100%;
-        padding: 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1em;
-        margin-top: 10px;
-      }
-
-      form button:hover {
-        background-color: #0056b3;
-      }
-
-      @media (max-width: 768px) {
-        form {
-          padding: 12px;
-          margin-bottom: 20px;
-        }
-
-        form label {
-          font-size: 0.95em;
-          margin-bottom: 10px;
-        }
-
-        form input[type="number"] {
-          padding: 10px;
-          font-size: 16px;
-        }
-
-        form button {
-          padding: 12px;
-          font-size: 0.95em;
-        }
-      }
-
-      @media (max-width: 480px) {
-        form {
-          padding: 10px;
-        }
-
-        form button {
-          padding: 12px;
-          font-size: 0.9em;
-        }
-      }
-
-      #results {
-        margin-top: 20px;
-      }
-
-      #results ul {
-        list-style: none;
+        padding: 12px;
+        margin-bottom: 20px;
       }
 
       #results li {
-        padding: 12px;
-        margin-bottom: 10px;
-        background-color: #fff;
-        border-left: 4px solid #007bff;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
-
-      #results li:hover {
-        background-color: #f0f8ff;
-        border-left-color: #0056b3;
-      }
-
-      .game-name {
-        font-weight: bold;
-        color: #007bff;
-      }
-
-      #game-details {
-        color: #555;
+        padding: 10px;
+        margin-bottom: 8px;
+        font-size: 0.95em;
       }
 
       #game-details h3 {
-        color: #333;
-        margin-bottom: 15px;
-        font-size: 1.4em;
-      }
-
-      #game-details p {
-        line-height: 1.6;
+        font-size: 1.2em;
         margin-bottom: 12px;
       }
 
-      @media (max-width: 768px) {
-        #results li {
-          padding: 10px;
-          margin-bottom: 8px;
-          font-size: 0.95em;
-        }
+      #game-details p {
+        font-size: 0.95em;
+        margin-bottom: 10px;
+      }
+    }
 
-        #game-details h3 {
-          font-size: 1.2em;
-          margin-bottom: 12px;
-        }
-
-        #game-details p {
-          font-size: 0.95em;
-          margin-bottom: 10px;
-        }
+    @media screen and (max-width: 400px) {
+      form {
+        padding: 10px;
       }
 
-      @media (max-width: 480px) {
-        #results li {
-          padding: 8px;
-          margin-bottom: 6px;
-          font-size: 0.9em;
-        }
-
-        #game-details h3 {
-          font-size: 1.1em;
-        }
-
-        #game-details p {
-          font-size: 0.9em;
-        }
+      #results li {
+        padding: 8px;
+        margin-bottom: 6px;
+        font-size: 0.9em;
       }
 
-      .footer {
-        background-color: #f9f9f9;
-        border-top: 1px solid #ccc;
-        padding: 15px;
-        text-align: center;
+      #game-details h3 {
+        font-size: 1.1em;
       }
 
-      .footer a {
-        color: #007bff;
-        text-decoration: none;
+      #game-details p {
+        font-size: 0.9em;
       }
-
-      .footer a:hover {
-        text-decoration: underline;
-      }
-
-      .no-selection {
-        color: #999;
-        font-style: italic;
-      }
-
-      @media (max-width: 768px) {
-        .footer {
-          padding: 12px;
-        }
-
-        .footer p {
-          font-size: 0.95em;
-        }
-
-        .footer a {
-          margin: 0 8px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .footer {
-          padding: 10px;
-        }
-
-        .footer p {
-          font-size: 0.9em;
-        }
-
-        .footer a {
-          margin: 0 5px;
-          display: inline-block;
-        }
-      }
-    </style>
+    }
+    </style>  
   </head>
 
-<body>
-    <div class="container">
-      <div class="left-panel">
-        <h2>SEARCH MY BOARD GAMES</h2>
-        <div id="search-box"></div>
-        <div id="results"></div>
+
+  <body>
+    <div class="navbar">
+      <a href="index.html"><h3>Go back</h3></a>
+    </div>
+      
+    <div class="row">
+      <div class="side">
+        <div class="padded20">
+          <h2>SEARCH MY BOARD GAMES</h2>
+        </div>
+
+        <div class="padded20">
+          <div id="search-box"></div>
+          <div id="results"></div>
+        </div>
       </div>
 
-      <div class="right-panel">
-        <h2>GAME DETAILS</h2>
-        <div id="game-details" class="no-selection">
-          <p>Select a game to see details.</p>
+      <div class="main">
+        <div class="padded20">
+          <h2>GAME DETAILS</h2>
+        </div>
+
+        <div class="padded30">
+          <div id="game-details" class="no-selection">
+            <p>Select a game to see details.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="footer">
       <p>
-        <a href="https://boardgamegeek.com/profile/pauloba0" class="link1" target="_blank" rel="noreferrer noopener">BGG</a>
-        <a href="index.html"><h3>Back to main</h3></a>
+        <a href="https://github.com/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Github</a>
+        <a href="https://stackoverflow.com/users/3009085/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Stackoverflow</a>
+        <a href="https://www.linkedin.com/in/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Linkedin</a>
+        <a href="https://boardgamegeek.com/user/pauloba0" class="link1" target="_blank" rel="noreferrer noopener">BGG</a>
       </p>
     </div>
 
-    <script src="../games-resources/script.js"></script>
-</body>
+    <script src="games-resources/script.js"></script>
+  </body>
 </html>
