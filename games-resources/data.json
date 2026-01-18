@@ -2,6 +2,7 @@
   {
     "game": "Azul",
     "year": 2017,
+    "bgg_url": "https://boardgamegeek.com/boardgame/230802/azul",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "open drafting, tile placement",
@@ -31,6 +32,7 @@
   {
     "game": "Backdoors & Breaches",
     "year": 2019,
+    "bgg_url": "https://boardgamegeek.com/boardgame/297925/backdoors-and-breaches-core-deck",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "cards, educational, incident response",
@@ -45,6 +47,7 @@
   {
     "game": "Camel up. Second edition",
     "year": 2018,
+    "bgg_url": "https://boardgamegeek.com/boardgame/260605/camel-up-second-edition",
     "min_players": 3,
     "max_players": 8,
     "mechanics": "party, camel racing, dice rolling",
@@ -66,6 +69,7 @@
   {
     "game": "Cheese thief",
     "year": 2020,
+    "bgg_url": "https://boardgamegeek.com/boardgame/294175/cheese-thief",
     "min_players": 4,
     "max_players": 8,
     "mechanics": "secret roles, party, no luck dice (no rolling)",
@@ -80,6 +84,7 @@
   {
     "game": "Chroma mix",
     "year": 2024,
+    "bgg_url": "https://boardgamegeek.com/boardgame/382241/chroma-mix",
     "min_players": 1,
     "max_players": 4,
     "mechanics": "hand management, market",
@@ -94,6 +99,7 @@
   {
     "game": "Cubeo",
     "year": 2016,
+    "bgg_url": "https://boardgamegeek.com/boardgame/191916/cubeo",
     "min_players": 2,
     "max_players": 2,
     "mechanics": "area majority, abstract, no luck dice (no rolling)",
@@ -108,6 +114,7 @@
   {
     "game": "Dama y tigre",
     "year": 2018,
+    "bgg_url": "https://boardgamegeek.com/boardgame/222643/the-lady-and-the-tiger",
     "min_players": 1,
     "max_players": 6,
     "mechanics": "bid, race, collect, bluffing, deduction, maze, puzzle, bidding, open drafting, set collection",
@@ -122,6 +129,7 @@
   {
     "game": "Dragon keepers",
     "year": 2024,
+    "bgg_url": "https://boardgamegeek.com/boardgame/383109/dragonkeepers",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "hand management, open drafting, set collection",
@@ -136,6 +144,7 @@
   {
     "game": "Exclusion zone botanist",
     "year": 2025,
+    "bgg_url": "https://rpggeek.com/rpg/106924/exclusion-zone-botanist",
     "min_players": 1,
     "max_players": 1,
     "mechanics": "solitaire, sketching, drawing, creativity",
@@ -150,6 +159,7 @@
   {
     "game": "A fake artist goes to NY",
     "year": 2011,
+    "bgg_url": "https://boardgamegeek.com/boardgame/135779/a-fake-artist-goes-to-new-york",
     "min_players": 5,
     "max_players": 10,
     "mechanics": "bluffing, deduction, party game, painting",
@@ -164,6 +174,7 @@
   {
     "game": "Forage",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/373577/forage-a-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 1,
     "mechanics": "PnP, abstract, strategy, cards, dice",
@@ -178,6 +189,7 @@
   {
     "game": "Groove",
     "year": 2021,
+    "bgg_url": "https://boardgamegeek.com/boardgame/329873/grove-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 2,
     "mechanics": "PnP, abstract, strategy, cards, dice",
@@ -195,6 +207,7 @@
   {
     "game": "El crimen de Quintana de la Matanza",
     "year": 2020,
+    "bgg_url": "https://boardgamegeek.com/boardgame/304847/hidden-games-crime-scene-the-new-haven-case",
     "min_players": 1,
     "max_players": 6,
     "mechanics": "investigation, deduction, cooperative, campaign game",
@@ -209,6 +222,7 @@
   {
     "game": "Hive pocket",
     "year": 2023,
+    "bgg_url": "https://boardgamegeek.com/boardgame/154597/hive-pocket",
     "min_players": 2,
     "max_players": 2,
     "mechanics": "strategy, abstract, pieces as a board",
@@ -234,6 +248,7 @@
   {
     "game": "Imhotep",
     "year": 2016,
+    "bgg_url": "https://boardgamegeek.com/boardgame/191862/imhotep",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "area majority, end-game bonus, set collection, worker placement, modular boards",
@@ -263,6 +278,7 @@
   {
     "game": "Miru",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/378489/miru-an-analog-adventure-game",
     "min_players": 1,
     "max_players": 10,
     "mechanics": "solitaire, dice rolling, science fiction",
@@ -277,6 +293,7 @@
   {
     "game": "Munchkin",
     "year": 2010,
+    "bgg_url": "https://boardgamegeek.com/boardgame/1927/munchkin",
     "min_players": 3,
     "max_players": 6,
     "mechanics": "diced tutorial",
@@ -291,6 +308,7 @@
   {
     "game": "Mysterium park",
     "year": 2020,
+    "bgg_url": "https://boardgamegeek.com/boardgame/301767/mysterium-park",
     "min_players": 2,
     "max_players": 6,
     "mechanics": "cooperative, pattern recognition, deduction, abstract thinking",
@@ -305,6 +323,7 @@
   {
     "game": "Orchard",
     "year": 2018,
+    "bgg_url": "https://boardgamegeek.com/boardgame/245487/orchard-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 1,
     "mechanics": "PnP, abstract, strategy, cards",
@@ -326,6 +345,7 @@
   {
     "game": "Pistas cruzadas",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/300753/cross-clues",
     "min_players": 2,
     "max_players": 6,
     "mechanics": "cooperative, real time, deduction, word game",
@@ -340,6 +360,7 @@
   {
     "game": "Polyhedral potions",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/358754/polyhedral-potions",
     "min_players": 1,
     "max_players": 6,
     "mechanics": "roll and write, set of 7 roll-dice",
@@ -357,6 +378,7 @@
   {
     "game": "Potion explotion",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/180974/potion-explosion",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "contracts, drafting, set collection, pattern recognition, take that",
@@ -371,6 +393,7 @@
   {
     "game": "Rail road ink, edicion azul",
     "year": 2019,
+    "bgg_url": "https://boardgamegeek.com/boardgame/245654/railroad-ink-deep-blue-edition",
     "min_players": 1,
     "max_players": 6,
     "mechanics": "roll and write",
@@ -385,6 +408,7 @@
     {
     "game": "Scattergories",
     "year": 1988,
+    "bgg_url": "https://boardgamegeek.com/boardgame/2381/scattergories",
     "min_players": 2,
     "max_players": 6,
     "mechanics": "dice rolling, abstract thinking, word, real-time",
@@ -399,6 +423,7 @@
   {
     "game": "Se vende",
     "year": 2012,
+    "bgg_url": "https://boardgamegeek.com/boardgame/172/for-sale",
     "min_players": 3,
     "max_players": 6,
     "mechanics": "bidding, auction, hand management",
@@ -416,6 +441,7 @@
   {
     "game": "Secret Hitler",
     "year": 2015,
+    "bgg_url": "https://boardgamegeek.com/boardgame/188834/secret-hitler",
     "min_players": 5,
     "max_players": 10,
     "mechanics": "PnP, cooperative, hidden roles, bluffing",
@@ -430,6 +456,7 @@
   {
     "game": "SixStix",
     "year": 2017,
+    "bgg_url": "https://boardgamegeek.com/boardgame/194438/sixstix",
     "min_players": 1,
     "max_players": 4,
     "mechanics": "pattern recognition, pattern building, logical thinking, spacial thinking",
@@ -444,6 +471,7 @@
   {
     "game": "Smart 10",
     "year": 2021,
+    "bgg_url": "https://boardgamegeek.com/boardgame/241590/smart10",
     "min_players": 2,
     "max_players": 8,
     "mechanics": "trivial, party, push your luck, bet on your knowledge",    
@@ -458,6 +486,7 @@
   {
     "game": "Splendor duel",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/364073/splendor-duel",
     "min_players": 2,
     "max_players": 2,
     "mechanics": "open drafting, set collection",
@@ -472,6 +501,7 @@
   {
     "game": "Spots",
     "year": 2022,
+    "bgg_url": "https://boardgamegeek.com/boardgame/372559/spots",
     "min_players": 2,
     "max_players": 4,
     "mechanics": "push your luck, dice rolling, race, set collection",    
@@ -486,6 +516,7 @@
   {
     "game": "Star realms. Colony wars",
     "year": 2017,
+    "bgg_url": "https://boardgamegeek.com/boardgame/182631/star-realms-colony-wars",
     "min_players": 2,
     "max_players": 2,
     "mechanics": "deck, bag and pool building, hand management, open drafting, take that",
@@ -500,6 +531,7 @@
   {
     "game": "Tinderblox. Storm edition",
     "year": 2024,
+    "bgg_url": "https://boardgamegeek.com/boardgame/422436/tinderblox-storm-edition",
     "min_players": 2,
     "max_players": 6,
     "mechanics": "stacking and balancing, dexterity, party game, use tweezers",
@@ -514,6 +546,7 @@
   {
     "game": "UNO",
     "year": 1971,
+    "bgg_url": "https://boardgamegeek.com/boardgame/2223/uno",
     "min_players": 2,
     "max_players": 10,
     "mechanics": "card game, hand management, matching-cards, take that",
@@ -528,6 +561,7 @@
   {
     "game": "Voyages",
     "year": 2021,
+    "bgg_url": "https://boardgamegeek.com/boardgame/350736/voyages",
     "min_players": 1,
     "max_players": 10,
     "mechanics": "roll and write, bingo, multiple maps",
@@ -542,6 +576,7 @@
   {
     "game": "Yahtzee",
     "year": 1956,
+    "bgg_url": "https://boardgamegeek.com/boardgame/2243/yahtzee",
     "min_players": 2,
     "max_players": 10,
     "mechanics": "dice rolling, push your luck",

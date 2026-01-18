@@ -70,8 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function displayGameDetails(game) {
+		const gameName = game.bgg_url 
+			? `<a href="${game.bgg_url}" target="_blank" rel="noopener noreferrer">${game.game}</a>`
+			: `<a href="https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=${encodeURIComponent(game.game)}" target="_blank" rel="noopener noreferrer">${game.game}</a>`;
+		
 		gameDetailsContainer.innerHTML = `
-			<h3>${game.game}</h3>
+			<h3>${gameName}</h3>
 			<p><strong>Year:</strong> ${game.year ? game.year : 'N/A'} &nbsp; | &nbsp; <strong>Players:</strong> ${game.min_players}${game.min_players !== game.max_players ? '-' + game.max_players : ''} &nbsp; | &nbsp; <strong>Age:</strong> ${game.age}+ &nbsp; | &nbsp; <strong>Complexity:</strong> ${game.complexity}/5</p>
 			<p><strong>Playing Time:</strong> ${game.playing_time || 'N/A'}</p>
 			<p><strong>Mechanics:</strong> ${game.mechanics}</p>
