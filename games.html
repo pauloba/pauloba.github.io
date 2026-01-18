@@ -14,13 +14,14 @@
         font-family: Arial, sans-serif;
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        min-height: 100vh;
       }
 
       .container {
         display: flex;
         flex: 1;
         gap: 0;
+        flex-direction: row;
       }
 
       .left-panel {
@@ -43,6 +44,67 @@
         margin-bottom: 20px;
         font-size: 1.5em;
         color: #333;
+      }
+
+      /* Tablet (768px - 1024px) */
+      @media (max-width: 1024px) {
+        .left-panel {
+          flex: 0 0 40%;
+          padding: 15px;
+        }
+
+        .right-panel {
+          padding: 15px;
+        }
+
+        .left-panel h2,
+        .right-panel h2 {
+          font-size: 1.3em;
+        }
+      }
+
+      /* Mobile (up to 768px) */
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .left-panel {
+          flex: 0 0 auto;
+          border-right: none;
+          border-bottom: 1px solid #ccc;
+          padding: 15px;
+          max-height: 50vh;
+        }
+
+        .right-panel {
+          flex: 1;
+          padding: 15px;
+        }
+
+        .left-panel h2,
+        .right-panel h2 {
+          font-size: 1.2em;
+          margin-bottom: 15px;
+        }
+
+        body {
+          min-height: auto;
+        }
+      }
+
+      /* Small mobile (up to 480px) */
+      @media (max-width: 480px) {
+        .left-panel,
+        .right-panel {
+          padding: 10px;
+        }
+
+        .left-panel h2,
+        .right-panel h2 {
+          font-size: 1.1em;
+          margin-bottom: 10px;
+        }
       }
 
       form {
@@ -90,6 +152,39 @@
         background-color: #0056b3;
       }
 
+      @media (max-width: 768px) {
+        form {
+          padding: 12px;
+          margin-bottom: 20px;
+        }
+
+        form label {
+          font-size: 0.95em;
+          margin-bottom: 10px;
+        }
+
+        form input[type="number"] {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        form button {
+          padding: 12px;
+          font-size: 0.95em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        form {
+          padding: 10px;
+        }
+
+        form button {
+          padding: 12px;
+          font-size: 0.9em;
+        }
+      }
+
       #results {
         margin-top: 20px;
       }
@@ -133,6 +228,40 @@
         margin-bottom: 12px;
       }
 
+      @media (max-width: 768px) {
+        #results li {
+          padding: 10px;
+          margin-bottom: 8px;
+          font-size: 0.95em;
+        }
+
+        #game-details h3 {
+          font-size: 1.2em;
+          margin-bottom: 12px;
+        }
+
+        #game-details p {
+          font-size: 0.95em;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        #results li {
+          padding: 8px;
+          margin-bottom: 6px;
+          font-size: 0.9em;
+        }
+
+        #game-details h3 {
+          font-size: 1.1em;
+        }
+
+        #game-details p {
+          font-size: 0.9em;
+        }
+      }
+
       .footer {
         background-color: #f9f9f9;
         border-top: 1px solid #ccc;
@@ -153,13 +282,42 @@
         color: #999;
         font-style: italic;
       }
+
+      @media (max-width: 768px) {
+        .footer {
+          padding: 12px;
+        }
+
+        .footer p {
+          font-size: 0.95em;
+        }
+
+        .footer a {
+          margin: 0 8px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .footer {
+          padding: 10px;
+        }
+
+        .footer p {
+          font-size: 0.9em;
+        }
+
+        .footer a {
+          margin: 0 5px;
+          display: inline-block;
+        }
+      }
     </style>
   </head>
 
 <body>
     <div class="container">
       <div class="left-panel">
-        <h2>SEARCH GAMES</h2>
+        <h2>SEARCH MY BOARD GAMES</h2>
         <div id="search-box"></div>
         <div id="results"></div>
       </div>

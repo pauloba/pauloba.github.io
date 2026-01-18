@@ -179,14 +179,17 @@
     "game": "Groove",
     "year": 2021,
     "min_players": 1,
-    "max_players": 1,
+    "max_players": 2,
     "mechanics": "PnP, abstract, strategy, cards, dice",
     "description": "multiplayer with N copies of the game. 18 cards feature orange, lemon and lime trees and a new element, glades. Increase your harvest as much as you can.",
     "playing_time": "10 minutes",
     "age": 8,
     "complexity": 1.34,
     "expansion": {
-      "e1": "No"
+      "e1": {
+        "title": "Groove wars (2023)",
+        "description": "A fan-made two-player competitive version of Grove. https://boardgamegeek.com/filepage/253688/grove-wars-a-2-player-game-of-fruitition-fan-game"
+      }
     }
   },
   {

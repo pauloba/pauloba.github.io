@@ -75,9 +75,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			<p><strong>Year:</strong> ${game.year ? game.year : 'N/A'} &nbsp; | &nbsp; <strong>Players:</strong> ${game.min_players}${game.min_players !== game.max_players ? '-' + game.max_players : ''} &nbsp; | &nbsp; <strong>Age:</strong> ${game.age}+ &nbsp; | &nbsp; <strong>Complexity:</strong> ${game.complexity}/5</p>
 			<p><strong>Playing Time:</strong> ${game.playing_time || 'N/A'}</p>
 			<p><strong>Mechanics:</strong> ${game.mechanics}</p>
-			<p><strong>Description:</strong> ${game.description}</p>
+			<p><strong>Description:</strong> ${linkifyUrls(game.description)}</p>
 			${formatExpansion(game.expansion)}
 		`;
+	}
+
+	// Helper function to convert URLs to clickable links
+	function linkifyUrls(text) {
+		const urlRegex = /(https?:\/\/[^\s]+)/g;
+		return text.replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
 	}
 
 	// Helper to format expansion field (handles object with any number of elements)
@@ -97,10 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const formattedItems = items.map(item => {
 		if (typeof item === 'object' && item.title) {
 		// New format: {title, description}
-		return `<strong>${item.title}</strong>: ${item.description}`;
+		return `<strong>${item.title}</strong>: ${linkifyUrls(item.description)}`;
 		}
 		// Fallback for old string format
-		return item;
+		return linkifyUrls(item);
 	});
 	
 	return `<p><strong>Expansions:</strong><br>${formattedItems.join('<br>')}</p>`;
