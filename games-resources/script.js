@@ -7,24 +7,68 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Create form inside search box
 	const form = document.createElement('form');
 	form.innerHTML = `
-		<label>
-			<input type="radio" name="searchType" value="min" checked> Minimum players (1-5)
-		</label>
-		<label>
-			<input type="radio" name="searchType" value="max"> Maximum players (1-10)
-		</label>
-		<input type="number" id="playerCount" min="1" placeholder="Number of players" required>
+		<fieldset id="playerSearchFields">
+			<legend>Search by Players:</legend>
+			<label>
+				<input type="radio" name="searchType" value="min" checked> Minimum players (1-5)
+			</label>
+			<label>
+				<input type="radio" name="searchType" value="max"> Maximum players (1-10)
+			</label>
+			<input type="number" id="playerCount" min="1" placeholder="Number of players" required>
+		</fieldset>
+		<fieldset id="mechanicSearchFields">
+			<legend>Search by Mechanic:</legend>
+			<label>
+				<input type="radio" name="searchType" value="mechanic"> Search by game mechanic
+			</label>
+			<select id="mechanicInput" disabled>
+				<option value="">-- Select a mechanic --</option>
+			</select>
+		</fieldset>
 		<button type="submit">Search</button>
 	`;
 	searchBoxContainer.appendChild(form);
 
 	// Set initial GAME DETAILS content
-	gameDetailsContainer.innerHTML = '<p class="no-selection">Select a game to see details.</p>';
+	gameDetailsContainer.innerHTML = '<p class="no-selection">Click on a game name to see details.</p>';
 
 	let games = [];
 
-	// Load games from data.json
-	fetch('games-resources/data.json')
+	// Get form elements
+	const playerCountInput = document.getElementById('playerCount');
+	const mechanicInput = document.getElementById('mechanicInput');
+	const playerSearchFields = document.getElementById('playerSearchFields');
+	const mechanicSearchFields = document.getElementById('mechanicSearchFields');
+	const searchTypeRadios = form.elements['searchType'];
+
+	// Handle search type change to enable/disable fields
+	searchTypeRadios.forEach(radio => {
+		radio.addEventListener('change', function() {
+			if (this.value === 'mechanic') {
+				// Disable player search fields
+				playerCountInput.disabled = true;
+				playerCountInput.removeAttribute('required');
+				playerSearchFields.style.opacity = '0.5';
+				mechanicSearchFields.style.opacity = '1';
+				// Enable mechanic input
+				mechanicInput.disabled = false;
+				mechanicInput.setAttribute('required', 'required');
+			} else {
+				// Enable player search fields
+				playerCountInput.disabled = false;
+				playerCountInput.setAttribute('required', 'required');
+				playerSearchFields.style.opacity = '1';
+				mechanicSearchFields.style.opacity = '0.5';
+				// Disable mechanic input
+				mechanicInput.disabled = true;
+				mechanicInput.removeAttribute('required');
+			}
+		});
+	});
+
+	// Load games from games.json
+	fetch('games-resources/games.json')
 		.then(response => response.json())
 		.then(data => {
 			games = data;
@@ -34,26 +78,60 @@ document.addEventListener('DOMContentLoaded', () => {
 			resultsContainer.textContent = 'Failed to load games data.';
 		});
 
+	// Load mechanics from mechanics.json and populate dropdown
+	fetch('games-resources/mechanics.json')
+		.then(response => response.json())
+		.then(mechanics => {
+			const mechanicSelect = document.getElementById('mechanicInput');
+			mechanics.forEach(mechanic => {
+				const option = document.createElement('option');
+				option.value = mechanic;
+				option.textContent = mechanic;
+				mechanicSelect.appendChild(option);
+			});
+		})
+		.catch(err => {
+			console.error('Error loading mechanics:', err);
+		});
+
 	form.addEventListener('submit', function(e) {
 		e.preventDefault();
 		const searchType = form.elements['searchType'].value;
-		const playerCount = parseInt(document.getElementById('playerCount').value, 10);
-		if (isNaN(playerCount)) {
-			resultsContainer.textContent = 'Please enter a valid number.';
-			return;
-		}
-		let filtered = [];
-		if (searchType === 'min') {
-			filtered = games.filter(game => Number(game.min_players) === playerCount);
+		
+		if (searchType === 'mechanic') {
+			const mechanicSearch = mechanicInput.value.trim();
+			if (!mechanicSearch) {
+				resultsContainer.textContent = 'Please select a mechanic to search for.';
+				return;
+			}
+			const filtered = games.filter(game => {
+				const gameMechanics = game.mechanics.split(',').map(m => m.trim());
+				return gameMechanics.includes(mechanicSearch);
+			});
+			displayResults(filtered, mechanicSearch, 'mechanic');
 		} else {
-			filtered = games.filter(game => Number(game.max_players) === playerCount);
+			const playerCount = parseInt(playerCountInput.value, 10);
+			if (isNaN(playerCount)) {
+				resultsContainer.textContent = 'Please enter a valid number.';
+				return;
+			}
+			let filtered = [];
+			if (searchType === 'min') {
+				filtered = games.filter(game => Number(game.min_players) === playerCount);
+			} else {
+				filtered = games.filter(game => Number(game.max_players) === playerCount);
+			}
+			displayResults(filtered, playerCount, searchType);
 		}
-		displayResults(filtered, playerCount, searchType);
 	});
 
-	function displayResults(games, playerCount, searchType) {
+	function displayResults(games, searchValue, searchType) {
 		if (!games.length) {
-			resultsContainer.innerHTML = `<p>No games found for ${searchType === 'min' ? 'minimum' : 'maximum'} ${playerCount} players.</p>`;
+			if (searchType === 'mechanic') {
+				resultsContainer.innerHTML = `<p>No games found with mechanic: <strong>${searchValue}</strong></p>`;
+			} else {
+				resultsContainer.innerHTML = `<p>No games found for ${searchType === 'min' ? 'minimum' : 'maximum'} ${searchValue} players.</p>`;
+			}
 			return;
 		}
 		resultsContainer.innerHTML = `<ul>${games.map((game, idx) => `<li><span class="game-name" data-idx="${idx}">${game.game}</span> <br><small>(players: ${game.min_players === game.max_players ? game.min_players : `${game.min_players}-${game.max_players}`})</small></li>`).join('')}</ul>`;
