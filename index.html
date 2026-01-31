@@ -1,152 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My website</title>
+    <title>pauloba</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      /* Style the body */
-      body {
-        font-family : "Ubuntu";
-        src: url('Ubuntu.woff');
-        margin: 0;
-        color: #494949;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #585a5a;
-      }
-  
-      /* Style the navigation bar links */
-      .navbar a {
-        float: left;
-        display: block;
-        color: #9dc0a0;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-  
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-  
-      /* Change color on hover  - navbar */
-      .navbar a:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-  
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-  
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: white;
-        padding: 20px;
-      }
-  
-      /* Main column */
-      .main {   
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-  
-      /* Image class */
-      .image-style {
-        background-color: #fff;
-        width: 100%;
-        padding: 20px;
-      }
-  
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row {   
-          flex-direction: column;
-        }
-      }
-  
-      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
-        .navbar a {
-          float: none;
-          width: 100%;
-        }
-      }
-  
-    /* Footer */
-    .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-      }
-  
-    .link1 {
-      font-weight: bold;
-      border: none;
-      color: #494949;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      text-decoration: underline;    
-    }
-    .link1:hover {
-      color: #9dc0a0;
-    }    
-  
-    .padded30 {
-     padding: 30px;
-    } 
-    .padded20 {
-      padding: 20px;
-    }  
-    /* CV image - hover effect */
-    .cvthumbnail {
-        width: 130px;
-        height: 195px;
-        position: relative;
-        display: block;
-        margin-left: 30px;
-        margin-right: auto;
-    }
-    .cvthumbnail .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .cvthumbnail:hover .img-top {
-        display: inline;
-    }
-  </style>  
+    <link rel="stylesheet" href="styles.css">  
 </head>
 
 
@@ -156,9 +15,9 @@
     <a href="#cv"><h3>Career</h3></a> -->
     <a href="offers.html"><h3>Readme</h3></a>
     <a href="art.html"><h3>Digital art</h3></a>
-    <a href="games.html"><h3>My BG collection</h3></a>
+    <a href="games.html"><h3>BG collection</h3></a>
     <!-- <a href="book.html"><h3>Book</h3></a> --> 
-    <a href="https://www.linkedin.com/in/pauloba" target="_blank" rel="noreferrer noopener"><h3>Contact me</h3></a>
+    <a href="contact.html"><h3>Contact me</h3></a>
   </div>
     
   <div class="row">
@@ -173,7 +32,7 @@
       <p>I hold a Computer Science degree from the University of Vigo and over the last 10+ year have developed deep expertise in designing and deploying cloud solutions using industry-leading tools.</p> 
       <p>My background encompasses system architecture, system administration, cybersecurity, technical support, providing me with a comprehensive foundation in enterprise infrastructure.</p>
       <p>I am committed to delivering robust, scalable solutions through a methodical and detail-oriented approach. I bring strong organizational skills, comprehensive technical documentation practices, and a track record of collaborating effectively across multidisciplinary teams.</p>
-      <p>I welcome the opportunity to discuss <a href="https://pauloba.github.io/offers.html">remote positions</a> that align with my experience and expertise.</p>
+      <p>I welcome the opportunity to discuss <a href="https://pauloba.github.io/offers.html" class="link">remote positions</a> that align with my experience and expertise.</p>
       <div class="padded30">
         <img border="0" alt="signature" src="offers-resources/signature.png">      
       </div>
@@ -188,15 +47,11 @@
 
     <div class="padded30">
       <p>
-        <a href="main-resources/resume.pdf">
-          Resume version 1.0
-        </a>
+        <a href="main-resources/resume.pdf" class="link"  target="_blank" rel="noreferrer noopener"> Resume version 1.0 </a>
       </p>
       
       <p>
-        <a href="main-resources/prodriguez-cv.pdf">
-          Resume version 1.1
-        </a>
+        <a href="main-resources/prodriguez-cv.pdf" class="link"  target="_blank" rel="noreferrer noopener"> Resume version 1.1 </a>
       </p>
     </div>
 

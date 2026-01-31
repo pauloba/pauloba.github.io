@@ -1,283 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My website</title>
+    <title>pauloba</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      /* Style the body */
-      body {
-        font-family : "Ubuntu";
-        src: url('Ubuntu.woff');
-        margin: 0;
-        color: #494949;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #585a5a;
-      }
-  
-      /* Style the navigation bar links */
-      .navbar a {
-        float: left;
-        display: block;
-        color: #9dc0a0;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-  
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-  
-      /* Change color on hover  - navbar */
-      .navbar a:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-  
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-  
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: white;
-        padding: 20px;
-      }
-  
-      /* Main column */
-      .main {   
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-  
-      /* Image class */
-      .image-style {
-        background-color: #fff;
-        width: 100%;
-        padding: 20px;
-      }
-  
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row {   
-          flex-direction: column;
-        }
-      }
-  
-      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
-        .navbar a {
-          float: none;
-          width: 100%;
-        }
-      }
-  
-    /* Footer */
-    .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-      }
-  
-    .link1 {
-      font-weight: bold;
-      border: none;
-      color: #494949;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      text-decoration: underline;    
-    }
-    .link1:hover {
-      color: #9dc0a0;
-    }    
-  
-    .padded30 {
-     padding: 30px;
-    } 
-    .padded20 {
-      padding: 20px;
-    }
-
-    /* Game-specific styles */
-    #search-box,
-    #results,
-    #game-details {
-      color: #494949;
-    }
-
-    #results ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #results li {
-      padding: 12px;
-      margin-bottom: 10px;
-      background-color: #fff;
-      border-left: 4px solid #9dc0a0;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    #results li:hover {
-      background-color: #f0f8ff;
-      border-left-color: #585a5a;
-    }
-
-    .game-name {
-      font-weight: bold;
-      color: #585a5a;
-    }
-
-    #game-details h3 {
-      color: #585a5a;
-      margin-bottom: 15px;
-      font-size: 1.4em;
-    }
-
-    #game-details p {
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .no-selection {
-      color: #999;
-      font-style: italic;
-    }
-
-    form {
-      margin-bottom: 30px;
-      padding: 15px;
-      background-color: #fff;
-      border-radius: 4px;
-    }
-
-    form label {
-      display: block;
-      margin-bottom: 12px;
-      cursor: pointer;
-      color: #585a5a;
-    }
-
-    form input[type="radio"],
-    form input[type="number"] {
-      margin-right: 8px;
-    }
-
-    form input[type="number"] {
-      width: 100%;
-      padding: 8px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 1em;
-    }
-
-    fieldset {
-      border: none;
-      padding: 15px 0;
-      margin: 0;
-    }
-
-    fieldset:first-of-type {
-      padding-bottom: 15px;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #ddd;
-    }
-
-    form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #9dc0a0;
-      color: #585a5a;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1em;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    form button:hover {
-      background-color: #585a5a;
-      color: #9dc0a0;
-    }
-
-    @media screen and (max-width: 700px) {
-      form {
-        padding: 12px;
-        margin-bottom: 20px;
-      }
-
-      #results li {
-        padding: 10px;
-        margin-bottom: 8px;
-        font-size: 0.95em;
-      }
-
-      #game-details h3 {
-        font-size: 1.2em;
-        margin-bottom: 12px;
-      }
-
-      #game-details p {
-        font-size: 0.95em;
-        margin-bottom: 10px;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      form {
-        padding: 10px;
-      }
-
-      #results li {
-        padding: 8px;
-        margin-bottom: 6px;
-        font-size: 0.9em;
-      }
-
-      #game-details h3 {
-        font-size: 1.1em;
-      }
-
-      #game-details p {
-        font-size: 0.9em;
-      }
-    }
-    </style>  
+    <link rel="stylesheet" href="styles.css">  
   </head>
 
 
@@ -289,7 +17,7 @@
     <div class="row">
       <div class="side">
         <div class="padded20">
-          <h2>SEARCH MY BOARD GAMES</h2>
+          <h2>My board game collection</h2>
         </div>
 
         <div class="padded20">
@@ -300,7 +28,7 @@
 
       <div class="main">
         <div class="padded20">
-          <h2>GAME DETAILS</h2>
+          <h2>Game details</h2>
         </div>
 
         <div class="padded30">
@@ -313,8 +41,20 @@
 
     <div class="footer">
       <p>
-        <a href="https://boardgamegeek.com/user/pauloba0" class="link1" target="_blank" rel="noreferrer noopener">BGG</a>
+        <a href="https://boardgamegeek.com/user/pauloba0" class="link1" target="_blank" rel="noreferrer noopener">BGG</a>My top ten favourite games:
       </p>
+      <div>
+        <a href="https://boardgamegeek.com/boardgame/230802/azul" target="_blank" rel="noreferrer noopener"><img src="games-resources/1.jpg" class="thumbnail" alt="Azul"></a>
+        <a href="https://boardgamegeek.com/boardgame/153938/camel-up" target="_blank" rel="noreferrer noopener"><img src="games-resources/2.jpg" class="thumbnail" alt="Camel Up"></a>
+        <a href="https://boardgamegeek.com/boardgame/382241/chroma-mix" target="_blank" rel="noreferrer noopener"><img src="games-resources/3.jpg" class="thumbnail" alt="Chroma Mix"></a>
+        <a href="https://boardgamegeek.com/boardgame/154597/hive-pocket" target="_blank" rel="noreferrer noopener"><img src="games-resources/4.jpg" class="thumbnail" alt="Hive Pocket"></a>
+        <a href="https://boardgamegeek.com/boardgame/191862/imhotep" target="_blank" rel="noreferrer noopener"><img src="games-resources/5.jpg" class="thumbnail" alt="Imhotep"></a>
+        <a href="https://boardgamegeek.com/boardgame/222643/the-lady-and-the-tiger" target="_blank" rel="noreferrer noopener"><img src="games-resources/6.jpg" class="thumbnail" alt="The Lady and the Tiger"></a>
+        <a href="https://boardgamegeek.com/boardgame/245487/orchard-9-card-solitaire-game" target="_blank" rel="noreferrer noopener"><img src="games-resources/7.jpg" class="thumbnail" alt="Orchard"></a>
+        <a href="https://boardgamegeek.com/boardgame/188834/secret-hitler" target="_blank" rel="noreferrer noopener"><img src="games-resources/8.jpg" class="thumbnail" alt="Secret Hitler"></a>
+        <a href="https://boardgamegeek.com/boardgame/364073/splendor-duel" target="_blank" rel="noreferrer noopener"><img src="games-resources/9.jpg" class="thumbnail" alt="Splendor Duel"></a>
+        <a href="https://boardgamegeek.com/boardgame/241590/smart10" target="_blank" rel="noreferrer noopener"><img src="games-resources/10.jpg" class="thumbnail" alt="Smart10"></a>
+      </div>
     </div>
 
     <script src="games-resources/script.js"></script>

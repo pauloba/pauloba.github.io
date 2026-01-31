@@ -2,182 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My website</title>
+    <title>pauloba</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <style>
-      * {
-          box-sizing: border-box;
-        }
-      
-      /* Style the body */
-      body {
-        font-family : "Ubuntu";
-        src: url('Ubuntu.woff');
-        margin: 0;
-        color: #494949;
-      }
-  
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 14px 20px;
-      }
-      
-      /* Style the disclaimer */
-      .disclaimer {
-        overflow: hidden;
-        background-color: #e1f6e2;
-        text-align: center;
-        padding: 14px 20px;
-      }
-      
-      .colored-square {
-        background-color: #9dc0a0;
-        padding: 20px;
-        border-radius: 25px;      
-      }
-  
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #585a5a;
-      }
-  
-      /* Style the navigation bar links */
-      .navbar a {
-        float: left;
-        display: block;
-        color: #9dc0a0;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-  
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-  
-      /* Change color on hover  - navbar */
-      .navbar a:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-  
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: white;
-        padding: 20px;
-      }
-  
-      /* Main column */
-      .main {   
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-  
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column {
-          width: 100%;
-        }
-      }
-  
-      /* Footer */
-      .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-      }
-  
-      .link1 {
-        font-weight: bold;
-        border: none;
-        color: #494949;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        text-decoration: underline;    
-      }
-      .link1:hover {
-        color: #9dc0a0;
-      }  
-  
-      .link2 {
-        font-weight: bold;
-        border: none;
-        color: #9dc0a0;
-        cursor: pointer;
-        text-decoration: underline;    
-      }
-      .link2:hover {
-        color: #494949;
-      }  
-
-      .padded30 {
-       padding: 30px;
-       } 
-
-       .padded-mixed {
-       padding: 20px 30px;
-       } 
-
-    /* Image - hover effect */
-    .thumbnail-arrow {
-        position: relative;
-        display: block;
-        margin-left: 30px;
-        margin-right: auto;
-    }
-    .thumbnail-arrow .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .thumbnail-arrow:hover .img-top {
-        display: inline;
-    }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="navbar">
     <a href="index.html"><h3>Back to main</h3></a>
-  </div>
-
-  <div class="disclaimer">
-    <div class="colored-square">
-      <p style="color:white;"> <b>Disclaimer:</b> I made these wallpapers with Gimp on my free time just for fun. </p>
-      <p style="color:white;"> I am not the designer of the images, if you are the author and you want me to take the wallpapers down, send me a message. </p>
-    </div>
   </div>
     
   <div class="row">
@@ -197,10 +31,8 @@
 
         </div>
       
-          <p>My take on the "tea house" gmail theme converted to a 1920x1080 jpg wallpaper.</p>
-          <p>The base images used for the Tea House wallpaper <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes" class="link2"  target="_blank" rel="noreferrer noopener">are these ones</a>.</p>
-          <p>Jason made a dynamic wallpaper that changes throughout the course of the day showing the different scenes of the classic Tea House fox.</p>
-          <p>Check out <a href="https://jbmorley.co.uk/posts/2022-06-14-revisiting-googles-tea-house" class="link2"  target="_blank" rel="noreferrer noopener">Jason's automatic changing wallpaper</a></p>
+          <p>Tea house gmail theme | 1920x1080 jpg</p>
+          <p>Base images <a href="https://jbmorley.co.uk/posts/2012-10-19-igoogle-themes" class="link"  target="_blank" rel="noreferrer noopener"> here</a> | Check out <a href="https://jbmorley.co.uk/posts/2022-06-14-revisiting-googles-tea-house" class="link"  target="_blank" rel="noreferrer noopener">Jason's automatic changing wallpaper</a></p>
       </div>
 
       <div class="padded-mixed">
@@ -217,7 +49,7 @@
 
         </div>      
         
-        <p>A 3200x1800 jpg experiment wallpaper based on the Misery Mire level from the videogame Zelda a link to the past.</p>
+        <p>Misery Mire level from Zelda a link to the past | 3200x1800 jpg</p>
 
       </div>
 
@@ -235,7 +67,7 @@
 
         </div>      
         
-        <p>A 1920x1080 jpg wallpaper based on Yoshi's Island icy level.</p>
+        <p>Yoshi's Island icy level | 1920x1080 jpg</p>
 
       </div>      
       
@@ -257,44 +89,7 @@
 
         </div>      
       
-        <p>A 1920x1080 jpg wallpaper based on random images I found on the internet with a common theme, the DevOps Universe.</p>
-        <p>The wallpaper includes a meme and a visual joke with a drunk astrounaut as well as several references to DevOps tools and technologies.</p>
-        <!-- 
-        <p>
-          <ul style="line-height:180%">
-            <li>
-              Base wallpaper, Gopher on a rocket + k8s logo with astronaut <a href="https://wallpaperaccess.com/kubernetes" class="link2" target="_blank" rel="noreferrer noopener">www.wallpaperaccess.com/kubernetes</a>
-            </li>
-
-            <li>
-              Argo logo <a href="https://argoproj.github.io/static/home-15d3ed7f06b22973bcd7922e497ef311.png" class="link2" target="_blank" rel="noreferrer noopener">www.argoproj.github.io</a> 
-            </li>
-
-            <li>
-              Octocat in astronaut mode <a href="https://cdn.dribbble.com/users/213082/screenshots/1915397/media/e85f811bfbba175f0b9aff0fc7688f4f.jpg?compress=1&resize=800x600&vertical=top" class="link2" target="_blank" rel="noreferrer noopener">www.dribble.com</a> 
-            </li>
-            
-            <li>
-              This is fine dog <a href="https://blenderartists.org/t/this-is-fine/1261356" class="link2" target="_blank" rel="noreferrer noopener">www.blenderartists.org</a> 
-            </li>
-            
-            <li>
-              Docker whale <a href="https://www.docker.com/hashicorp" class="link2" target="_blank" rel="noreferrer noopener">www.docker.com</a> 
-            </li>
-
-            <li>
-              Astronaut hanging at Space Bar <a href="https://www.deviantart.com/prdenko/art/Space-Bar-199914655" class="link2" target="_blank" rel="noreferrer noopener">www.deviantart.com</a> 
-            </li>
-                                   
-            <li>
-              Sysadmin sticker on the rocket <a href="https://www.redbubble.com/i/sticker/sysadmin-because-even-developers-need-heroes-by-yourgeekside/25840852.EJUG5" class="link2" target="_blank" rel="noreferrer noopener">www.redbubble.com</a> 
-            </li>
-
-            <li>
-              Kind logo inside a bottle <a href="https://d33wubrfki0l68.cloudfront.net/d0c94836ab5b896f29728f3c4798054539303799/9f948/logo/logo.png" class="link2" target="_blank" rel="noreferrer noopener">www.kind.sigs.k8s.io</a> 
-            </li>
-        </p>
-        -->
+        <p>DevOps Universe | 1920x1080 jpg</p>   
         
       </div>
 
@@ -308,8 +103,8 @@
             <img border="0" alt="Thumbnail Linux vintage wallpaper" src="art-resources/thumb3-arrow.jpg" class="img-top" width="200" height="100">
            </a>
         </div>      
-        <p>A linux vintage 1920x1080 jpg wallpaper.</p>
-        <p>The base images used for the wallpaper are <a href="https://store.kde.org/p/1358761/" class="link2"  target="_blank" rel="noreferrer noopener">this one</a> and <a href="https://www.reddit.com/r/wallpaper/comments/kcffkg/1920x1080_penguin_linux_wallpaper_dark_light_svg/" class="link2"  target="_blank" rel="noreferrer noopener">this one</a>.</p>
+        <p>Linux vintage | 1920x1080 jpg</p>
+        <p>Base images <a href="https://store.kde.org/p/1358761/" class="link"  target="_blank" rel="noreferrer noopener">here</a> and <a href="https://www.reddit.com/r/wallpaper/comments/kcffkg/1920x1080_penguin_linux_wallpaper_dark_light_svg/" class="link"  target="_blank" rel="noreferrer noopener">here</a>.</p>
       </div>
 
     </div>

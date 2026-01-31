@@ -1,198 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Paula's web</title>
+    <title>pauloba</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    /* https://diybookcovers.com/3Dmockups/# */
-
-    /* Style the body */
-    body {
-      font-family : "Ubuntu";
-      src: url('Ubuntu.woff');
-      margin: 0;
-      color: #252450;
-    }
-
-    /* Header/logo Title */
-    .header {
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Increase the font size of the heading */
-    .header h1 {
-      font-size: 40px;
-    }
-
-    /* Style the top navigation bar */
-    .navbar {
-      overflow: hidden;
-      background-color: #252450;
-    }
-
-    /* Style the navigation bar links */
-    .navbar a {
-      float: left;
-      display: block;
-      color: #d6af62;
-      text-align: center;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
-
-    /* Right-aligned link */
-    .navbar a.right {
-      float: right;
-    }
-
-    /* Change color on hover  - navbar */
-    .navbar a:hover {
-      background-color: #d6af62;
-      color: #252450;
-    }
-
-    /* Column container */
-    .row {  
-      display: -ms-flexbox; /* IE10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE10 */
-      flex-wrap: wrap;
-    }
-
-    /* Dotted border - hr text sepparator */
-    hr.dotted {
-      border-top: 3px dotted #bbb;
-      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
-    }
-
-    /* birds background image - hr text sepparator */
-    hr.birds {
-      border-top: 0px;
-      border-bottom: 0px;
-      border-left: 0px;
-      border-right: 0px;
-      height: 60px;
-      background-image: url("book-resources/birds.png");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-    }
-
-    /* Create two unequal columns that sits next to each other */
-    /* Sidebar/left column */
-    .side {
-      -ms-flex: 30%; /* IE10 */
-      flex: 30%;
-      background-color: #f1f1f1;
-      padding: 20px;
-    }
-
-    /* Main column */
-    .main {   
-      -ms-flex: 70%; /* IE10 */
-      flex: 70%;
-      background-color: white;
-      padding: 20px;
-    }
-
-    /* Image class */
-    .image-style {
-      background-color: #fff;
-      width: 100%;
-      padding: 20px;
-    }
-
-    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 700px) {
-      .row {   
-        flex-direction: column;
-      }
-    }
-
-    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
-      .navbar a {
-        float: none;
-        width: 100%;
-      }
-    }
-
-    .button1 {
-      font-weight: bold;
-      background-color: #252450;
-      border: none;
-      color: #d6af62;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
-    }
-    .button1:hover {
-      background-color: #d6af62;
-      color: #252450;
-    }
-/* Inline-block to display the download and share to mastodon buttons horizontally, side by side. */
-/* Note: If you resize the browser window, the links will automatically break when it becomes too crowded. */
-  .nav {
-    background-color: none; 
-  	list-style-type: none;
-  	text-align: center;
-  	margin: 0;
-  	padding: 0;
-	}
-
-	.nav li {
-  	display: inline-block;
-  	font-size: 20px;
-  	padding: 20px;
-	}
-    /* Footer */
-    .footer {
-      padding: 20px;
-      text-align: center;
-      background: #ddd;
-    }
-
-    .link1 {
-      font-weight: bold;
-      border: none;
-      color: #252450;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      text-decoration: underline;    
-    }
-    .link1:hover {
-      color: #d6af62;
-    }
-    .padded10 {
-      padding: 10px;
-    } 
-  </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -212,8 +25,8 @@
       </div>
       <div class="padded10">
         <p>Me llamo Paula y soy ingeniera informática.</p> 
-        <p>He creado este espacio para publicar un libro sobre acoso laboral.</p> 
-        <p>Mi única intención es que la información que he compilado en el libro esté disponible de forma gratuita y accesible para todas las personas que quieran leerla.</p> 
+        <p>He creado este espacio para publicar una compilación en formato libro digital sobre acoso laboral.</p> 
+        <p>Mi única intención es que la información esté disponible de forma gratuita y accesible para todas las personas que quieran leerla.</p> 
         <p>Si esto ayuda, aunque solo sea a una persona, mi objetivo se habrá cumplido.</p>
       </div>
       
@@ -221,7 +34,7 @@
       <h2>Disclaimer</h2>
       </div>
       <div class="padded10">
-        <p>No soy profesional de la salud, si te sientes identificado con algo de lo descrito en el libro, busca ayuda psicológica profesional.</p>
+        <p>No soy profesional de la salud, si te sientes identificado con algo de lo descrito, busca ayuda psicológica profesional.</p>
         <p>Eliminar a la maltratadora/maltratador de tu vida, es el paso 0 para la desintoxicación mental y la curación.</p>
         <p>Sálvate a ti mismo, porque nadie lo hará por ti.</p>
       </div>
@@ -233,8 +46,7 @@
         <ul class="nav">
           <li><a href="book-resources/libro-prodriguez.pdf" class="button1">Descarga PDF</a></li>
             <li><a href="book-resources/libro-prodriguez.epub" class="button1">Descarga EPUB</a></li>
-            <li><script src="https://unpkg.com/mastodon-share-button@latest/dist/mastodon-share-button.js"></script> 
-          <mastodon-share-button share_message="Descubre el libro gratuito de Paula para combatir el entorno laboral tóxico https://pauloba.github.io/book.html" dark_mode="true" class="button2"></mastodon-share-button></li>
+            <li><button onclick="shareToMastodon()" class="button1">Comparte. Mastodon</button></li>
           </ul>
       </div>
     
@@ -289,11 +101,20 @@
 
 <div class="footer">
   <p>
-    <a href="https://github.com/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Github</a>
-    <a href="https://stackoverflow.com/users/3009085/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Stackoverflow</a>
-    <a href="https://www.linkedin.com/in/pauloba" class="link1" target="_blank" rel="noreferrer noopener">Linkedin</a>
+    <a href="https://github.com/pauloba" class="link" target="_blank" rel="noreferrer noopener">Github</a>
+    <a href="https://stackoverflow.com/users/3009085/pauloba" class="link" target="_blank" rel="noreferrer noopener">Stackoverflow</a>
+    <a href="https://www.linkedin.com/in/pauloba" class="link" target="_blank" rel="noreferrer noopener">Linkedin</a>
   </p>
 </div>
+
+<script>
+function shareToMastodon() {
+  const shareMessage = "Descubre el libro gratuito de Paula para combatir el entorno laboral tóxico https://pauloba.github.io/book.html";
+  const encodedMessage = encodeURIComponent(shareMessage);
+  const mastodonUrl = `https://mastodon.social/share?text=${encodedMessage}`;
+  window.open(mastodonUrl, '_blank', 'width=600,height=400');
+}
+</script>
 
 </body>
 </html>

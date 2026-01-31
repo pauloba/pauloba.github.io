@@ -1,126 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My website</title>
+    <title>pauloba</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      /* Style the body */
-      body {
-        font-family : "Ubuntu";
-        src: url('Ubuntu.woff');
-        margin: 0;
-        color: #494949;
-      }
-      .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      /* Style the top navigation bar */
-      .navbar {
-        overflow: hidden;
-        background-color: #585a5a;
-      }
-  
-      /* Style the navigation bar links */
-      .navbar a {
-        float: left;
-        display: block;
-        color: #9dc0a0;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-  
-      /* Right-aligned link */
-      .navbar a.right {
-        float: right;
-      }
-  
-      /* Change color on hover  - navbar */
-      .navbar a:hover {
-        background-color: #9dc0a0;
-        color: #585a5a;
-      }
-  
-      /* Column container */
-      .row {  
-        display: -ms-flexbox; /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-      }
-  
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: white;
-        padding: 20px;
-      }
-  
-      /* Main column */
-      .main {   
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        background-color: #f1f1f1;
-        padding: 20px;
-      }
-  
-      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 700px) {
-        .row {   
-          flex-direction: column;
-        }
-      }
-  
-      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
-        .navbar a {
-          float: none;
-          width: 100%;
-        }
-      }
-  
-    /* Footer */
-    .footer {
-        padding: 20px;
-        text-align: center;
-        background: #ddd;
-      }
-
-    .link1 {
-      font-weight: bold;
-      border: none;
-      color: #494949;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      text-decoration: underline;    
-    }
-    .link1:hover {
-      color: #9dc0a0;
-    }    
-  
-    .padded30 {
-     padding: 20px 30px;
-    } 
-    .padded20 {
-      padding: 20px;
-    }  
-  </style>  
+    <link rel="stylesheet" href="styles.css">  
 </head>
 
 
@@ -132,74 +17,36 @@
   <div class="row">
     <div class="side">
     <div class="padded30">
-      <h2><img border="0" alt="UK flag" src="offers-resources/uk-flag.png" width="25" height="15">&nbsp;Dear tech recruiter:</h2>
+      <h2>Requirements, the offer must include:</h2>
     </div>
 
     <div class="padded30">
-        <p>If you send me a message with a job offer and you expect me to invest my time answering, please read the following guidelines.</p> <p>The job offer must include:</p>
         <p>
           <ul style="line-height:180%">
-            <li>The name and description of the company, with real links to their website.</li>
-            <li>An accurate description of the possition, with the responsabilities to be acquired and the specific profile desired, not a list of "buzzwords" taken from Linkedin.
-                <ul><li>If you are looking for ninjas/rockstars in PHP + Python + Ruby + Java + C# + Angular + NodeJS + Bash + Photoshop + Illustrator + CSS + iOS + Android + BigData + AWS + Azure and network configuration, probably what you are looking for is to hire a team of people, not just one person, therefore, I'm not interested.</li></ul>
-             </li>
-             <li>The salary, or at least a salary range ( avoid non-sense ranges like "between 20k and 60k" ).</li>
-             <li>Location: on site or remote. If remote is negotiable, please mention it.</li>
-           </ul>
+            <li>Location: remote or on-site.</li>
+            <li>Name and description of the company, with a real link to their website.</li>
+            <li>Description of the responsabilities to be acquired in the first year.</li>
+            <li>A salary offer that matches a senior cloud engineer profile: <a href="www.levels.fyi/?tab=levels"  class="link" target="_blank" rel="noreferrer noopener" class="link1"> www.levels.fyi</a></li>
+            <li>Additional benefits (health insurance, gym subscription, restaurant card)</li>
          </p>
-
-         <p>Needless to say, you won´t get an answer to your message, if you send me a message:</p>
-         <p>
-          <ul style="line-height:180%">
-            <li>Clearly copy pasted, for example using masculine pronouns and addressed to me, a woman.</li>
-            <li>Addressed to another person, e.g. "Hello Peter ..."</li>
-            <li>That shows you did not even read my CV and are offering a position totally unrelated to my professional background.</li>
-          </ul>
-         </p>
-     
-         <p>
-          These are guidelines based on basic netiquette, inspired by <a href="https://lists.es.python.org/pipermail/general/2016-October/003294.html" target="_blank" rel="noreferrer noopener"> this message from a Python maillist</a>.
-        </p>     
-      
-        <p>Thank you for reading!</p>
-        <p>Hoping all of the above seems reasonable to you, I am more than happy to answer your message, and maybe start a new proffesional adventure with you and your company.</p>
       </div>
     </div>
 
   <div class="main">
     <div class="padded30">
-      <h2><img border="0" alt="UK flag" src="offers-resources/spain-flag.png" width="25" height="15">&nbsp;Querid@ recruiter técnico:</h2>
+      <h2>Strong preferences that make you an ideal company:</h2>
     </div>
 
     <div class="padded30">
-      <p>Si me envías un mensaje con una oferta de empleo y esperas que invierta mi tiempo en responder, por favor lee las siguientes directrices.</p> <p>La oferta debe incluír:</p>
-      <p>
-        <ul style="line-height:180%">
-          <li>La descripción y el nombre de la empresa, con enlaces reales a la misma.</li>
-          <li>Una descripción precisa del puesto de trabajo, con las responsabilidades a adquirir y el perfil concreto deseado, no un listado de "buzzwords" sacadas de Linkedin. 
-            <ul><li>Si buscas ninjas/rockstars expertos en PHP + Python + Ruby + Java + C# + Angular + NodeJS + Bash + Photoshop + Illustrator + CSS + iOS + Android + BigData + AWS + Azure y configuración de redes, probablemente lo que estés buscando es contratar a un equipo de gente no a una sola persona, por tanto, no me interesa.</li></ul>
-          </li>
-          <li>Sueldo, o al menos rango salarial ( con sentido, nada de "entre 20K y 60K" ).</li>  
-          <li>Ubicación: on site o en remoto. Si el remoto es negociable, por favor menciónalo.</li>
-        </ul>
-      </p>
-        
-      <p>No hace falta decir que no recibirás respuesta a tu mensaje si el mensaje:</p>
-      <p>
-       <ul style="line-height:180%">
-         <li>Es un copia pega, por ejemplo usando pronombres masculinos, y dirigido a mi, una mujer.</li>
-         <li>Va dirigido a otra persona, por ej. "Hola Pedro ..."</li>
-         <li>Demuestra que ni si quiera has leído mi CV y me estás ofreciendo una posición que no está en absoluto relacionada con mi trayectoria profesional.</li>
-       </ul>
-      </p>
-  
-      <p>
-        Estas son unas directrices basadas en netiquetta básica, inspiradas por <a href="https://lists.es.python.org/pipermail/general/2016-October/003294.html" target="_blank" rel="noreferrer noopener"> este mensaje de una lista de correo de Python</a>.
-     </p>     
-   
-     <p>¡Gracias por leer hasta aquí!</p>
-     <p>Esperando que lo descrito arriba te suene razonable, estoy más que dispuesta a contestar tu mensaje y quizás embarcarme en una nueva aventura profesional contigo y tu empresa.</p>
-
+        <p>
+          <ul style="line-height:180%">
+            <li>Remote work.</li>
+            <li>Clear career progression paths.</li>
+            <li>Respect for work-life balance: flexible working hours.</li>
+            <li>Economical contributions from the company side to open source projects used internally.</li>
+            <li>Good practices in software development: code reviews, automated tests, CI/CD and documentation.</li>
+          </ul>
+        </p>
     </div>
   </div>
   </div>
