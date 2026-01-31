@@ -1,0 +1,445 @@
+/* Shared CSS Styles for Website */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Ubuntu";
+  src: url('Ubuntu.woff');
+  margin: 0;
+  color: #374151;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #1E3A8A;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #A7C7E7;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover - navbar */
+.navbar a:hover {
+  background-color: #A7C7E7;
+  color: #1E3A8A;
+}
+
+/* Column container */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  background-color: #F3F4F6;
+  padding: 20px;
+}
+
+/* Image class */
+.image-style {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Contact page layout */
+.contact-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contact-description {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.contact-section p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.contact-title {
+  margin-bottom: 30px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E0F2FE;
+}
+
+.link1 {
+  font-weight: bold;
+  border: none;
+  color: #494949;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link1:hover {
+  color: #6B7280;
+}
+
+.padded30 {
+  padding: 30px;
+}
+
+.padded20 {
+  padding: 20px;
+}
+
+/* Book-specific styles */
+.button1 {
+  font-weight: bold;
+  background-color: #252450;
+  border: none;
+  color: #d6af62;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #d6af62;
+  color: #252450;
+}
+
+.nav {
+  background-color: none;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.padded10 {
+  padding: 10px;
+}
+
+/* Art-specific styles */
+.link {
+  font-weight: bold;
+  border: none;
+  color: #133ae4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #494949;
+}
+
+.padded-mixed {
+  padding: 20px 30px;
+}
+
+/* Image - hover effect */
+.thumbnail-arrow {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.thumbnail-arrow .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.thumbnail-arrow:hover .img-top {
+  display: inline;
+}
+
+/* Game-specific styles */
+#search-box,
+#results,
+#game-details {
+  color: #494949;
+}
+
+#results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#results li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-left: 4px solid #6B7280;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#results li:hover {
+  background-color: #F9FAFB;
+  border-left-color: #374151;
+}
+
+.game-name {
+  font-weight: bold;
+  color: #374151;
+}
+
+#game-details h3 {
+  color: #374151;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+#game-details p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.no-selection {
+  color: #999;
+  font-style: italic;
+}
+
+form {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #374151;
+}
+
+form input[type="radio"],
+form input[type="number"] {
+  margin-right: 8px;
+}
+
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+fieldset {
+  border: none;
+  padding: 15px 0;
+  margin: 0;
+}
+
+fieldset:first-of-type {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #D1D5DB;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6B7280;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #374151;
+  color: #F9FAFB;
+}
+
+@media screen and (max-width: 700px) {
+  form {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  #results li {
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+  }
+
+  #game-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+
+  #game-details p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  form {
+    padding: 10px;
+  }
+
+  #results li {
+    padding: 8px;
+    margin-bottom: 6px;
+    font-size: 0.9em;
+  }
+
+  #game-details h3 {
+    font-size: 1.1em;
+  }
+
+  #game-details p {
+    font-size: 0.9em;
+  }
+}
+
+.thumbnail {
+  max-height: 50px;
+  max-width: 50px;
+  margin: 5px;
+}
+
+/* CV image - hover effect */
+.cvthumbnail {
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.cvthumbnail .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.cvthumbnail:hover .img-top {
+  display: inline;
+}
+
+/* Book-specific styles */
+.header {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+hr.dotted {
+  border-top: 3px dotted #bbb;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+hr.birds {
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  height: 60px;
+  background-image: url("book-resources/birds.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Disclaimer styles */
+.disclaimer {
+  overflow: hidden;
+  background-color: #e1f6e2;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.colored-square {
+  background-color: #9dc0a0;
+  padding: 20px;
+  border-radius: 25px;
+}
