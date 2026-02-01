@@ -4,19 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Style the body */
-body {
-  font-family: "Ubuntu";
-  src: url('Ubuntu.woff');
-  margin: 0;
-  color: #374151;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Style the top navigation bar */
 .navbar {
@@ -152,7 +139,7 @@ body {
   font-weight: bold;
   background-color: #252450;
   border: none;
-  color: #d6af62;
+  color: #A7C7E7;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -164,7 +151,7 @@ body {
 }
 
 .button1:hover {
-  background-color: #d6af62;
+  background-color: #A7C7E7;
   color: #252450;
 }
 
@@ -234,21 +221,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-#results li {
-  padding: 12px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  border-left: 4px solid #6B7280;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#results li:hover {
-  background-color: #F9FAFB;
-  border-left-color: #374151;
 }
 
 .game-name {
