@@ -802,7 +802,7 @@ div.notice p:last-of-type {
 }
 
 .footer-signature { 
-    width: 30%; /* 70% smaller */ 
+    width: 40%; /* 80% smaller */ 
     display: block; /* allows centering */ 
     margin: 20px auto 0; /* space above + centered */ 
 }
@@ -814,7 +814,7 @@ div.notice p:last-of-type {
 }
 
 .footer-games img {
-  width: 30%;              /* 70% smaller */
+  width: 60%;              /* 40% smaller */
   display: block;
   margin: 0 auto;
 }
