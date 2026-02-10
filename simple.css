@@ -773,7 +773,7 @@ div.notice p:last-of-type {
 
 /* Navigation bar */
 .nav {
-  background-color: #1E3A8A;     /* same blue you used before */
+  /*background-color: #1E3A8A; */    /* same blue you used before */
   text-align: center;            /* center all links */
   padding: 10px 0;
 }
@@ -781,9 +781,13 @@ div.notice p:last-of-type {
 /* Navigation links */
 .nav a {
   display: inline-block;         /* allows centering */
+  /*color: #A7C7E7;*/
+  background-color: #1E3A8A;
   color: #A7C7E7;
+  border-radius: 4px;
   text-decoration: none;
   padding: 14px 20px;
+  margin: 5px 3px;
   font-weight: bold;
 }
 
