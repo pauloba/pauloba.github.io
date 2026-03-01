@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				<input type="radio" name="searchType" value="mechanic"> Search by game mechanic
 			</label>
 			<select id="mechanicInput" disabled>
-				<option value=""></option>
+				<option value="" selected disabled>Select</option>
 			</select>
 		</fieldset>
 		<button type="submit">Search</button>
