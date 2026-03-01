@@ -311,4 +311,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	return `<p><strong>Expansions:</strong><br>${formattedItems.join('<br>')}</p>`;
 	}
 });
-
