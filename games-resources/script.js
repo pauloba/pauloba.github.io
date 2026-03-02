@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		<fieldset id="playerSearchFields">
 			<legend>Search by Players:</legend>
 			<label>
-				<input type="radio" name="searchType" value="range" checked> Range of players (1-10)
+				<input type="radio" name="searchType" value="range" checked> Range of players, between
 				<span style="margin-left:8px;">
 					<input type="number" id="playerMin" min="1" max="10" style="width:70px;" disabled>
 					-
