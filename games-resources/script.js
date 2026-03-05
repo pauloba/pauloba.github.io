@@ -198,11 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				resultsContainer.textContent = 'Minimum cannot be greater than maximum.';
 				return;
 			}
-			// Include games whose player ranges overlap the requested range
+			// Include games that can support at least the requested minimum and maximum players
+			// (game.min_players must be <= requested min, and game.max_players must be >= requested max)
 			const filteredRange = games.filter(game => {
 				const gMin = Number(game.min_players);
 				const gMax = Number(game.max_players);
-				return gMin <= maxVal && gMax >= minVal;
+				return gMin <= minVal && gMax >= maxVal;
 			});
 			displayResults(filteredRange, `${minVal}-${maxVal}`, 'range');
 		} else if (searchType === 'min') {
