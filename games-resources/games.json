@@ -127,6 +127,21 @@
     }
   },
   {
+    "game": "DnD healing potion markers & dice",
+    "year": 2021,
+    "bgg_url": "https://lynxshop.com/products/dnd-healing-potion-markers-dice-for-dungeons-dragons-dnd-5th-edition",
+    "min_players": 2,
+    "max_players": 8,
+    "mechanics": "fantasy, ttrpg",
+    "description": "15 color-coded healing potion tokens, 24 D4 dice, and 4 reference cards. Each potion level is paired with a corresponding color-matching dice set, guaranteeing you have the right amount dice for every healing dice roll.",
+    "playing_time": "2 hours",
+    "age": 12,
+    "complexity": 1.00,
+    "expansion": {
+      "e1": "No"
+    }
+  },  
+  {
     "game": "Dragon keepers",
     "year": 2024,
     "bgg_url": "https://boardgamegeek.com/boardgame/383109/dragonkeepers",
@@ -141,6 +156,36 @@
       "e1": "No"
     }
   },
+    {
+    "game": "Dungeon book of battle mats",
+    "year": 2019,
+    "bgg_url": "https://boardgamegeek.com/rpgitem/291356/the-dungeon-books-of-battle-mats",
+    "min_players": 2,
+    "max_players": 8,
+    "mechanics": "fantasy, ttrpg",
+    "description": "Set of 2 modular map books to play Dungeons & Dragons. It includes vinyl stickers that adhere to the books since the book is plastic based to allow writing on it with markers.",
+    "playing_time": "5 hours",
+    "age": 12,
+    "complexity": 1.00,
+    "expansion": {
+      "e1": "No"
+    }
+  },
+  {
+    "game": "El crimen de Quintana de la Matanza",
+    "year": 2020,
+    "bgg_url": "https://boardgamegeek.com/boardgame/304847/hidden-games-crime-scene-the-new-haven-case",
+    "min_players": 1,
+    "max_players": 6,
+    "mechanics": "investigation, deduction, cooperative, campaign game",
+    "description": "a mysterious death at a folk festival causes trouble. The death was dismissed by the police as natural and you are commissioned by an unknown person to investigate the case more closely. But who is the unknown client? And is it really a natural death?",
+    "playing_time": "2 hours 30 minutes",
+    "age": 14,
+    "complexity": 2.45,
+    "expansion": {
+      "e1": "No"
+    }
+  },    
   {
     "game": "Exclusion zone botanist",
     "year": 2025,
@@ -202,21 +247,6 @@
         "title": "Groove wars (2023)",
         "description": "A fan-made two-player competitive version of Grove. https://boardgamegeek.com/filepage/253688/grove-wars-a-2-player-game-of-fruitition-fan-game"
       }
-    }
-  },
-  {
-    "game": "El crimen de Quintana de la Matanza",
-    "year": 2020,
-    "bgg_url": "https://boardgamegeek.com/boardgame/304847/hidden-games-crime-scene-the-new-haven-case",
-    "min_players": 1,
-    "max_players": 6,
-    "mechanics": "investigation, deduction, cooperative, campaign game",
-    "description": "a mysterious death at a folk festival causes trouble. The death was dismissed by the police as natural and you are commissioned by an unknown person to investigate the case more closely. But who is the unknown client? And is it really a natural death?",
-    "playing_time": "2 hours 30 minutes",
-    "age": 14,
-    "complexity": 2.45,
-    "expansion": {
-      "e1": "No"
     }
   },
   {
