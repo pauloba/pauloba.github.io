@@ -142,6 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		.then(response => response.json())
 		.then(data => {
 			games = data;
+			// Update total games counter next to the collection heading
+			const totalEl = document.getElementById('total-games');
+			const total = Array.isArray(data) ? data.length : 0;
+			if (totalEl) totalEl.textContent = `Σ = ${total}`;
 		})
 		.catch(err => {
 			console.error('Error loading games:', err);
