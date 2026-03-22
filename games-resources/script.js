@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				</span>
 			</label>
 			<label>
-				<input type="radio" name="searchType" value="max"> Maximum players (1-5)
+				<input type="radio" name="searchType" value="max"> Maximum players (1-10)
 				<span style="margin-left:8px;">
 					<input type="number" id="playerMaxOnly" min="1" max="10" style="width:70px;" disabled>
 				</span>
