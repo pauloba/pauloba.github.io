@@ -50,20 +50,24 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/260605/camel-up-second-edition",
     "min_players": 3,
     "max_players": 8,
-    "mechanics": "party, camel racing, dice rolling",
+    "mechanics": "party, bidding, dice rolling",
     "description": "bet on five racing camels, trying to suss out which ones will place first and second in a quick race around a pyramid. The earlier you place your bet, the more you can win — should you guess correctly, of course.",
     "playing_time": "45 minutes",
     "age": 8,
     "complexity": 1.51,
     "expansion": {
       "e1": {
-        "title": "Crazy camels (2018)",
-        "description": "1 black camel, 1 white camel that run in the opposite direction to create entropy."
+        "title": "The referee camel (2017)",
+        "description": "The game is played as usual and supplemented by the brown referee camel. At the beginning of each stage, the player sitting to the right of the stage starter may place the referee camel on any free space on the track. If a camel unit ends its movement on the referee camel's space, all camels in this unit are asked to unstack and line up next to each other on this space. The camels are unstacked from top to bottom and lined up in the same order from left to right. The top camel is therefore on the far left, at the outer edge of the playing field, and is considered to be the furthest forward. As soon as the camels have been unstacked (or a single camel has landed on the field), the referee camel is removed from the track and placed next to the game board. It is not used again until the start of the next stage. If a camel unit lands on a field of camels that have already been unstacked, it jumps onto the camel furthest to the left."
       },
       "e2": {
-        "title": "The referee camel (2017)",
-        "description": "The fact that the camels in Camel Race pile up and run on together is a thorn in the side of the race organizers and is now to be prevented with the help of a referee camel The game is played as usual and supplemented by the brown referee camel. At the beginning of each stage, the player sitting to the right of the stage starter may place the referee camel on any free space on the track. If a camel unit ends its movement on the referee camel's space, all camels in this unit are asked to “unstack” and line up next to each other on this space. The camels are “unstacked” from top to bottom and lined up in the same order from left to right. (The top camel is therefore on the far left, at the outer edge of the playing field, and is considered to be the furthest forward). As soon as the camels have been “unstacked” (or a single camel has landed on the field), the referee camel is removed from the track and placed next to the game board. It is not used again until the start of the next stage. If a camel unit lands on a field of camels that have already been unstacked, it jumps onto the camel furthest to the left."
-      }
+        "title": "Partnership cards (2018)",
+        "description": "Form a betting partnership (with 6 or more players). Only once per round and as the action of your turn you can exchange your partner card with another player who also has one available. At the end of the round, each betting partner can score 1 bet or pyramid token from their partner (in addition to their own points)."
+      },
+      "e3": {
+        "title": "Crazy camels (2018)",
+        "description": "1 black camel, 1 white camel that run in the opposite direction to create entropy. The crazy camel first-time positions go like this. 1:tile 16 ;  2:tile 15 ; 3:tile 14. The camels move as the dice say, there's 2 exceptions: if a crazy camel is carrying camels on its back, you must move that one. If a crazy camel is sitting directly on top of another one with no racing camels between them, you must move the top one."
+      }          
     }
   },
   {
