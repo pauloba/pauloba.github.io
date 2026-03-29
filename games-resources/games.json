@@ -226,7 +226,7 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/373577/forage-a-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 1,
-    "mechanics": "abstract, strategy, cards, dice (no rolling)",
+    "mechanics": "PnP, abstract, strategy, cards, dice (no rolling)",
     "description": "Multiplayer with N copies of the game. 18 cards show different types of woodland areas. Harvest as much blackberries, chestnuts and mushrooms, using the dice as counters.",
     "playing_time": "10 minutes",
     "age": 8,
