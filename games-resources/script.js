@@ -279,6 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			<p><strong>Year:</strong> ${game.year ? game.year : 'N/A'} &nbsp; | &nbsp; <strong>Players:</strong> ${game.min_players}${game.min_players !== game.max_players ? '-' + game.max_players : ''} &nbsp; | &nbsp; <strong>Age:</strong> ${game.age}+ &nbsp; | &nbsp; <strong>Complexity:</strong> ${game.complexity}/5</p>
 			<p><strong>Playing Time:</strong> ${game.playing_time || 'N/A'}</p>
 			<p><strong>Mechanics:</strong> ${game.mechanics}</p>
+			<p><strong>Cards:</strong> ${game.cards || 'N/A'}</p>
 			<p><strong>Description:</strong> ${linkifyUrls(game.description)}</p>
 			${formatExpansion(game.expansion)}
 		`;

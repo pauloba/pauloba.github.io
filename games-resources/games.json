@@ -10,6 +10,7 @@
     "playing_time": "45 minutes",
     "age": 8,
     "complexity": 1.77,
+    "cards": "no",
     "expansion": {
       "e1": {
         "title": "Crystal mosaic (2020)",
@@ -40,6 +41,7 @@
     "playing_time": "60 minutes",
     "age": 18,
     "complexity": 3,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -55,6 +57,7 @@
     "playing_time": "45 minutes",
     "age": 8,
     "complexity": 1.51,
+    "cards": "no",
     "expansion": {
       "e1": {
         "title": "The referee camel (2017)",
@@ -76,11 +79,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/294175/cheese-thief",
     "min_players": 4,
     "max_players": 8,
-    "mechanics": "PnP, hidden roles, party, dice (no rolling)",
+    "mechanics": "PnP, hidden roles, party, dice (no rolling), cards",
     "description": "play as sleepyhead OR as the thief trying to steal the cheese. No moderator, no player elimination, no set pattern: it uses die-face combinations to provide replayable scenarios.",
     "playing_time": "15 minutes",
     "age": 8,
     "complexity": 1.13,
+    "cards": "plastified",
     "expansion": {
       "e1": "No"
     }
@@ -91,11 +95,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/382241/chroma-mix",
     "min_players": 1,
     "max_players": 4,
-    "mechanics": "hand management, market",
+    "mechanics": "hand management, market, cards",
     "description": "strategically mix colors together to achieve victory. Refill, print or mix your cards and pick from the central market.",
     "playing_time": "60 minutes",
     "age": 15,
     "complexity": 2,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -111,6 +116,7 @@
     "playing_time": "15 minutes",
     "age": 7,
     "complexity": 1.67,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -121,11 +127,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/222643/the-lady-and-the-tiger",
     "min_players": 1,
     "max_players": 6,
-    "mechanics": "bid, race, collect, bluffing, deduction, maze, puzzle, bidding, open drafting, set collection",
+    "mechanics": "bid, race, collect, bluffing, deduction, maze, puzzle, bidding, open drafting, set collection, cards",
     "description": "five small games with 5 different mechanics. Beautiful art inspired on the classic short story The Lady or the Tiger",
     "playing_time": "20 minutes",
     "age": 6,
     "complexity": 1.65,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -136,11 +143,12 @@
     "bgg_url": "https://lynxshop.com/products/dnd-healing-potion-markers-dice-for-dungeons-dragons-dnd-5th-edition",
     "min_players": 2,
     "max_players": 8,
-    "mechanics": "PnP, fantasy, ttrpg",
+    "mechanics": "PnP, fantasy, ttrpg, cards",
     "description": "15 color-coded healing potion tokens, 24 D4 dice, and 4 reference cards. Each potion level is paired with a corresponding color-matching dice set, guaranteeing you have the right amount dice for every healing dice roll.",
     "playing_time": "2 hours",
     "age": 12,
     "complexity": 1.00,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -156,6 +164,7 @@
     "playing_time": "20 minutes",
     "age": 8,
     "complexity": 1.98,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -171,6 +180,7 @@
     "playing_time": "5 hours",
     "age": 12,
     "complexity": 1.00,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -186,6 +196,7 @@
     "playing_time": "2 hours 30 minutes",
     "age": 14,
     "complexity": 2.45,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -201,6 +212,7 @@
     "playing_time": "20 minutes",
     "age": 8,
     "complexity": 1.98,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -216,6 +228,7 @@
     "playing_time": "20 minutes",
     "age": 8,
     "complexity": 1.10,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -231,6 +244,7 @@
     "playing_time": "10 minutes",
     "age": 8,
     "complexity": 1.30,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -246,6 +260,7 @@
     "playing_time": "10 minutes",
     "age": 8,
     "complexity": 1.34,
+    "cards": "sleeved",
     "expansion": {
       "e1": {
         "title": "Groove wars (2023)",
@@ -264,6 +279,7 @@
     "playing_time": "20 minutes",
     "age": 9,
     "complexity": 2.22,
+    "cards": "no",
     "expansion": {
       "e1": {
         "title": "Mosquito (2007)",
@@ -285,11 +301,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/191862/imhotep",
     "min_players": 2,
     "max_players": 4,
-    "mechanics": "PnP, area majority, end-game bonus, set collection, worker placement",
+    "mechanics": "PnP, area majority, end-game bonus, set collection, worker placement, cards",
     "description": "over 6 rounds, the players move wooden stones by boat to create 5 seminal monuments. On a turn, a player chooses 1 of 4 actions: procure new stones, load stones on a boat, bring a boat to a monument, or play an action card.",
     "playing_time": "40 minutes",
     "age": 10,
     "complexity": 2.01,
+    "cards": "plastified",
     "expansion": {
       "e1": {
         "title": "Private ships (2016)",
@@ -320,6 +337,7 @@
     "playing_time": "5 hours",
     "age": 13,
     "complexity": 1,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -335,6 +353,7 @@
     "playing_time": "2 hours",
     "age": 10,
     "complexity": 1.82,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -345,11 +364,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/301767/mysterium-park",
     "min_players": 2,
     "max_players": 6,
-    "mechanics": "cooperative, pattern recognition, deduction, abstract",
+    "mechanics": "cooperative, pattern recognition, deduction, abstract, cards",
     "description": "in this cooperative stand-alone game, the ghost sends visions with illustrated cards. The psychics try to interpret them in order to rule out certain suspects and locations.",
     "playing_time": "45 minutes",
     "age": 10,
     "complexity": 1.44,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -365,6 +385,7 @@
     "playing_time": "10 minutes",
     "age": 8,
     "complexity": 1.19,
+    "cards": "sleeved",
     "expansion": {
       "e1": {
         "title": "Orchard Recipes (2023)",
@@ -387,6 +408,7 @@
     "playing_time": "10 minutes",
     "age": 7,
     "complexity": 1.08,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -397,11 +419,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/358754/polyhedral-potions",
     "min_players": 1,
     "max_players": 6,
-    "mechanics": "PnP, roll and write, dice rolling",
+    "mechanics": "PnP, roll and write, dice rolling, cards",
     "description": "draft ingredients and mark them on score sheet; combine the ingredients to craft a potion and mark it on the potion chart. The game ends when someone earns their 3rd Star.",
     "playing_time": "30 minutes",
     "age": 14,
     "complexity": 1.50,
+    "cards": "plastified",
     "expansion": {
       "e1": {
       "title": "Poison Pack (2023)",
@@ -420,6 +443,7 @@
     "playing_time": "45 minutes",
     "age": 8,
     "complexity": 1.78,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -430,11 +454,12 @@
     "bgg_url": "https://www.youtube.com/playlist?app=desktop&list=PLvAJrckik_UOHy54KFSoYNiLRjR1Q0FAd",
     "min_players": 1,
     "max_players": 4,
-    "mechanics": "strategy, cooperative",
+    "mechanics": "strategy, cooperative, cards",
     "description": "Each player manages a laboratory in which Quantum Computing experiments are carried out which, if successful, will contribute grains of sand to the global scientific community.",
     "playing_time": "1 hour",
     "age": 8,
     "complexity": 2.5,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -450,6 +475,7 @@
     "playing_time": "30 minutes",
     "age": 8,
     "complexity": 1.46,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -465,6 +491,7 @@
     "playing_time": "30 minutes",
     "age": 12,
     "complexity": 1.36,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -475,11 +502,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/172/for-sale",
     "min_players": 3,
     "max_players": 6,
-    "mechanics": "PnP, bidding, hand management",
+    "mechanics": "PnP, bidding, hand management, cards",
     "description": "players buy and sell real estate. During the game's two distinct phases, players first bid for several buildings then, after all buildings have been bought, sell the buildings for the greatest profit possible.",
     "playing_time": "30 minutes",
     "age": 10,
     "complexity": 1.25,
+    "cards": "plastified",
     "expansion": {
       "e1": {
         "title": "Asesores (2021)",
@@ -493,11 +521,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/188834/secret-hitler",
     "min_players": 5,
     "max_players": 10,
-    "mechanics": "cooperative, hidden roles, bluffing",
+    "mechanics": "cooperative, hidden roles, bluffing, cards",
     "description": "PnP, dramatic game of political intrigue and betrayal set in 1930s Germany. Each player is randomly and secretly assigned to be a liberal or a fascist, and one player is Secret Hitler. The fascists coordinate to sow distrust and install their cold-blooded leader; the liberals must find and stop the Secret Hitler before it's too late. The liberal team always has a majority.",
     "playing_time": "45 minutes",
     "age": 13,
     "complexity": 1.74,
+    "cards": "plastified",
     "expansion": {
       "e1": "No"
     }
@@ -508,11 +537,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/194438/sixstix",
     "min_players": 1,
     "max_players": 4,
-    "mechanics": "pattern recognition, spacial thinking",
+    "mechanics": "pattern recognition, spacial thinking, cards",
     "description": "race to rearrange sticks to match the patterns shown on cards, and whoever collects the most cards wins!",
     "playing_time": "30 minutes",
     "age": 8,
     "complexity": 1.50,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -528,6 +558,7 @@
     "playing_time": "2 hours",
     "age": 10,
     "complexity": 1.17,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -538,11 +569,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/364073/splendor-duel",
     "min_players": 2,
     "max_players": 2,
-    "mechanics": "open drafting, set collection",
+    "mechanics": "open drafting, set collection, cards",
     "description": "take Gem and Pearl tokens from the common board, then purchase cards, gather bonuses, royal favors, and prestige.",
     "playing_time": "30 minutes",
     "age": 10,
     "complexity": 2.01,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -553,11 +585,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/372559/spots",
     "min_players": 2,
     "max_players": 4,
-    "mechanics": "push your luck, dice rolling, race, set collection",    
+    "mechanics": "push your luck, dice rolling, race, set collection, cards",    
     "description": "place dice onto dog cards. Dice you can't place get buried in your yard. Bury too many dice and you bust. Complete 6 dogs and you win!",
     "playing_time": "30 minutes",
     "age": 10,
     "complexity": 1.27,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -568,11 +601,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/182631/star-realms-colony-wars",
     "min_players": 2,
     "max_players": 2,
-    "mechanics": "deck building, hand management, open drafting, take that",
+    "mechanics": "deck building, hand management, open drafting, take that, cards",
     "description": "deckbuilding game in the Star Realms series which is both a standalone box set for two players (featuring an 80-card trade deck, as in the original) and an expansion for the base Star Realms set that allows it to be played as a four-player game.",
     "playing_time": "20 minutes",
     "age": 12,
     "complexity": 1.88,
+    "cards": "sleeved",
     "expansion": {
       "e1": "No"
     }
@@ -583,11 +617,12 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/295192/tinderblox",
     "min_players": 2,
     "max_players": 6,
-    "mechanics": "dexterity, party",
+    "mechanics": "dexterity, party, cards",
     "description": "Challenge your friends and family to 'Play with fire' as you gather around to build a 3D campfire, but don't get burned! If you drop a piece of the fire you lose the game!​",
     "playing_time": "15 minutes",
     "age": 6,
     "complexity": 1,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -603,6 +638,7 @@
     "playing_time": "30 minutes",
     "age": 6,
     "complexity": 1.10,
+    "cards": "yes",
     "expansion": {
       "e1": "No"
     }
@@ -618,6 +654,7 @@
     "playing_time": "30 minutes",
     "age": 8,
     "complexity": 1.79,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
@@ -633,6 +670,7 @@
     "playing_time": "30 minutes",
     "age": 6,
     "complexity": 1.17,
+    "cards": "no",
     "expansion": {
       "e1": "No"
     }
