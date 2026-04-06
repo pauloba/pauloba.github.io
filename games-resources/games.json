@@ -128,7 +128,7 @@
     "min_players": 1,
     "max_players": 6,
     "mechanics": "bid, race, collect, bluffing, deduction, maze, puzzle, bidding, open drafting, set collection, cards",
-    "description": "five small games with 5 different mechanics. Beautiful art inspired on the classic short story The Lady or the Tiger",
+    "description": "five small games with 5 different mechanics. Beautiful art inspired on the classic short story The Lady or the Tiger.",
     "playing_time": "20 minutes",
     "age": 6,
     "complexity": 1.65,
@@ -239,7 +239,7 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/373577/forage-a-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 1,
-    "mechanics": "PnP, abstract, strategy, cards, dice (no rolling)",
+    "mechanics": "PnP, abstract, strategy, cards, ,solitaire, dice (no rolling)",
     "description": "Multiplayer with N copies of the game. 18 cards show different types of woodland areas. Harvest as much blackberries, chestnuts and mushrooms, using the dice as counters.",
     "playing_time": "10 minutes",
     "age": 8,
@@ -250,12 +250,12 @@
     }
   },
   {
-    "game": "Groove",
+    "game": "Grove",
     "year": 2021,
     "bgg_url": "https://boardgamegeek.com/boardgame/329873/grove-9-card-solitaire-game",
     "min_players": 1,
     "max_players": 2,
-    "mechanics": "PnP, abstract, strategy, cards, dice (no rolling)",
+    "mechanics": "PnP, abstract, strategy, cards, dice (no rolling), solitaire",
     "description": "Multiplayer with N copies of the game. 18 cards feature orange, lemon and lime trees and a new element, glades. Increase your harvest as much as you can.",
     "playing_time": "10 minutes",
     "age": 8,
@@ -263,7 +263,7 @@
     "cards": "sleeved",
     "expansion": {
       "e1": {
-        "title": "Groove wars (2023)",
+        "title": "Grove wars (2023)",
         "description": "A fan-made two-player competitive version of Grove. https://boardgamegeek.com/filepage/253688/grove-wars-a-2-player-game-of-fruitition-fan-game"
       }
     }
@@ -291,7 +291,7 @@
       },
       "e3": {
         "title": "Pillbug (2013)",
-        "description": "2 new black/white pieces. The pillbug can move one space at a time OR it can move an adjacent unstacked piece (friend or enemy) two spaces: up onto the pillbug itself, then down into another empty space adjacent to itself."
+        "description": "The pillbug can move one space at a time OR it can move an adjacent unstacked piece (friend or enemy) two spaces: up onto the pillbug itself, then down into another empty space adjacent to itself."
       }
     }
   },
@@ -379,8 +379,8 @@
     "year": 2018,
     "bgg_url": "https://boardgamegeek.com/boardgame/245487/orchard-9-card-solitaire-game",
     "min_players": 1,
-    "max_players": 1,
-    "mechanics": "PnP, abstract, strategy, cards",
+    "max_players": 1, 
+    "mechanics": "PnP, abstract, strategy, cards, dice (no rolling), solitaire",
     "description": "Multiplayer with N copies of the game. Card overlpping game. Harvest fruit (score points) by playing cards so that their fruit trees overlap other trees already that bear the same fruit.",
     "playing_time": "10 minutes",
     "age": 8,
@@ -428,7 +428,7 @@
     "expansion": {
       "e1": {
       "title": "Poison Pack (2023)",
-      "description": "adds a new deck of poison cards, whenever you mark a Poison skull, gain a Poison card. You may take either of the two revealed cards or the top card off the deck."
+      "description": "adds a deck of poison cards, whenever you mark a Poison skull, gain a Poison card. You may take either of the two revealed cards or the top card off the deck."
       }
     }
   },
@@ -521,7 +521,7 @@
     "bgg_url": "https://boardgamegeek.com/boardgame/188834/secret-hitler",
     "min_players": 5,
     "max_players": 10,
-    "mechanics": "cooperative, hidden roles, bluffing, cards",
+    "mechanics": "PnP, cooperative, hidden roles, bluffing, cards",
     "description": "PnP, dramatic game of political intrigue and betrayal set in 1930s Germany. Each player is randomly and secretly assigned to be a liberal or a fascist, and one player is Secret Hitler. The fascists coordinate to sow distrust and install their cold-blooded leader; the liberals must find and stop the Secret Hitler before it's too late. The liberal team always has a majority.",
     "playing_time": "45 minutes",
     "age": 13,
@@ -618,7 +618,7 @@
     "min_players": 2,
     "max_players": 6,
     "mechanics": "dexterity, party, cards",
-    "description": "Challenge your friends and family to 'Play with fire' as you gather around to build a 3D campfire, but don't get burned! If you drop a piece of the fire you lose the game!​",
+    "description": "Challenge your friends and family to 'Play with fire' as you gather around to build a 3D campfire, but don't get burned! If you drop a piece on the fire you lose the game!​",
     "playing_time": "15 minutes",
     "age": 6,
     "complexity": 1,
