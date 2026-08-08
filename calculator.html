@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>~</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price comparator</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="simple.css">
+</head>
+
+<body class="calculator-page">
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="art.html">Art</a>
+    <a href="games.html">BG</a>
+    <a href="prototypes.html">Prototypes</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <div class="text-center">
+      <h4>Price comparator</h4>
+        <div class="text-center">
+          <table>
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Volume</th>
+                <th>Unit</th>
+                <th>Price €</th>
+                <th>Per unit</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+      <button id="addRow">+ Add option</button>
+      <section id="verdict"></section>
+    </div>
+  </main>
+
+  <div class="site-footer">
+    Copyright 2026 by
+    <img src="contact-resources/signature.png" alt="signature" class="footer-signature">
+  </div>
+
+  <script>
+  const rowsEl = document.getElementById('rows');
+  const verdictEl = document.getElementById('verdict');
+
+  function createRow(volume, unit, price){
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td class="label"></td>
+      <td><input type="number" class="volume" min="0" step="any" value="${volume}" placeholder="750"></td>
+      <td>
+        <select class="unit-select">
+          <option value="ml" ${unit==='ml'?'selected':''}>ml</option>
+          <option value="l" ${unit==='l'?'selected':''}>L</option>
+          <option value="g" ${unit==='g'?'selected':''}>g</option>
+          <option value="kg" ${unit==='kg'?'selected':''}>kg</option>
+        </select>
+      </td>
+      <td><input type="number" class="price" min="0" step="any" value="${price}" placeholder="3.29"></td>
+      <td class="price-per-l">—</td>
+      <td><button class="remove-btn" title="remove">×</button></td>
+    `;
+    rowsEl.appendChild(row);
+
+    row.querySelectorAll('input, select').forEach(el => el.addEventListener('input', calculate));
+    row.querySelector('.remove-btn').addEventListener('click', () => {
+      row.remove();
+      relabel();
+      calculate();
+    });
+  }
+
+  function relabel(){
+    [...rowsEl.children].forEach((row, i) => {
+      row.querySelector('.label').textContent = String.fromCharCode(65 + i);
+    });
+  }
+
+  function calculate(){
+    relabel();
+    const rows = [...rowsEl.children];
+    const data = rows.map(row => {
+      const volume = parseFloat(row.querySelector('.volume').value);
+      const unit = row.querySelector('.unit-select').value;
+      const price = parseFloat(row.querySelector('.price').value);
+      let liters = null;
+      if (unit === 'ml') liters = volume / 1000;
+      else if (unit === 'l') liters = volume;
+      else if (unit === 'g') liters = volume / 1000;
+      else if (unit === 'kg') liters = volume;
+
+      const perL = (volume > 0 && price >= 0 && !isNaN(volume) && !isNaN(price)) ? price / liters : null;
+      return { row, unit, perL, label: row.querySelector('.label').textContent };
+    });
+
+    data.forEach(d => {
+      const priceEl = d.row.querySelector('.price-per-l');
+      const isWeight = (d.unit === 'g' || d.unit === 'kg');
+      d.row.classList.remove('winner');
+
+      if (d.perL === null) {
+        priceEl.textContent = '—';
+      } else {
+        priceEl.textContent = d.perL.toFixed(2).replace('.', ',') + '€' + (isWeight ? '/kg' : '/L');
+      }
+    });
+
+    const valid = data.filter(d => d.perL !== null);
+    if (valid.length >= 2) {
+      valid.sort((a,b) => a.perL - b.perL);
+      const winner = valid[0];
+      const runnerUp = valid[1];
+      winner.row.classList.add('winner');
+      const savingsPct = ((runnerUp.perL - winner.perL) / runnerUp.perL * 100).toFixed(1).replace('.', ',');
+
+      verdictEl.innerHTML = `<p><mark>Best value: Option ${winner.label} → ${savingsPct}% cheaper per unit than the next best option.</mark></p>`;
+    } else if (valid.length === 1) {
+      verdictEl.innerHTML = `<p>Add another option to compare.</p>`;
+    } else {
+      verdictEl.innerHTML = `<p>Fill in volume and price above.</p>`;
+    }
+  }
+
+  document.getElementById('addRow').addEventListener('click', () => {
+    createRow('', 'ml', '');
+    calculate();
+  });
+
+  createRow(550, 'ml', 2.75);
+  createRow(750, 'ml', 3.29);
+  calculate();
+</script>
+</body>
+</html>
