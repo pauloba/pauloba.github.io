@@ -811,10 +811,49 @@ div.notice p:last-of-type {
     margin: 20px auto 0; /* space above + centered */ 
 }
 
-/* Footer for the games.html page */
-.footer-games {
-  padding: 30px 0;
+body.calculator-page table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.calculator-page table input {
+  width: 100%;
+}
+
+body.calculator-page table select {
+  width: auto;
+  min-width: 5em;
+  max-width: 5em;
+}
+
+body.calculator-page .volume,
+body.calculator-page .price {
+  max-width: 5em;
+}
+
+body.calculator-page .price-per-l {
+  font-size: 1.65em;
+  font-weight: bold;
+}
+
+body.calculator-page .winner {
+  outline: 2px solid var(--accent);
+}
+
+body.calculator-page #verdict {
   text-align: center;
+}
+
+body.calculator-page #addRow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.calculator-page #verdict mark {
+  background-color: var(--marked);
+  padding: 0.15em 0.4em;
+  border-radius: var(--standard-border-radius);
 }
 
 .footer-games img {
