@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>pauloba</title>
+    <title>~</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,16 +22,18 @@
     <div class="row">
       <div class="side">
         <div class="padded20">
-          <h4>My board game collection <span id="total-games" style="float:right;font-weight:normal">TOTAL = 0</span></h4>
+          <h4><a id="search-view-link" href="#search-view">My board game collection</a> <a id="all-games-link" href="#all-games" style="float:right;font-weight:normal"><span id="total-games">Σ = 0</span></a></h4>
         </div>
 
-        <div class="padded20">
+        <div id="search-view" class="padded20">
           <div id="search-box"></div>
           <div id="results"></div>
         </div>
+
+        <div id="all-games" class="padded20" hidden></div>
       </div>
 
-      <div class="main">
+      <div id="game-details-panel" class="main" hidden>
         <div class="padded20">
           <h4>Game details</h4>
         </div>
@@ -44,24 +46,10 @@
       </div>
     </div>
 
-    <div class="footer-games">
-      <p> <a href="https://boardgamegeek.com/user/pauloba0" class="link1" target="_blank" rel="noreferrer noopener">My BGG profile</a> </p>
-      <p> My top ten favourite games: </p>
-      
-      <div class="games-grid">
-        <a href="https://boardgamegeek.com/boardgame/230802/azul" target="_blank" rel="noreferrer noopener"><img src="games-resources/1.jpg" class="thumbnail" alt="Azul"></a>
-        <a href="https://boardgamegeek.com/boardgame/153938/camel-up" target="_blank" rel="noreferrer noopener"><img src="games-resources/2.jpg" class="thumbnail" alt="Camel Up"></a>
-        <a href="https://boardgamegeek.com/boardgame/382241/chroma-mix" target="_blank" rel="noreferrer noopener"><img src="games-resources/3.jpg" class="thumbnail" alt="Chroma Mix"></a>
-        <a href="https://boardgamegeek.com/boardgame/154597/hive-pocket" target="_blank" rel="noreferrer noopener"><img src="games-resources/4.jpg" class="thumbnail" alt="Hive Pocket"></a>
-        <a href="https://boardgamegeek.com/boardgame/191862/imhotep" target="_blank" rel="noreferrer noopener"><img src="games-resources/5.jpg" class="thumbnail" alt="Imhotep"></a>
-        <a href="https://boardgamegeek.com/boardgame/222643/the-lady-and-the-tiger" target="_blank" rel="noreferrer noopener"><img src="games-resources/6.jpg" class="thumbnail" alt="The Lady and the Tiger"></a>
-        <a href="https://boardgamegeek.com/boardgame/245487/orchard-9-card-solitaire-game" target="_blank" rel="noreferrer noopener"><img src="games-resources/7.jpg" class="thumbnail" alt="Orchard"></a>
-        <a href="https://boardgamegeek.com/boardgame/188834/secret-hitler" target="_blank" rel="noreferrer noopener"><img src="games-resources/8.jpg" class="thumbnail" alt="Secret Hitler"></a>
-        <a href="https://boardgamegeek.com/boardgame/364073/splendor-duel" target="_blank" rel="noreferrer noopener"><img src="games-resources/9.jpg" class="thumbnail" alt="Splendor Duel"></a>
-        <a href="https://boardgamegeek.com/boardgame/241590/smart10" target="_blank" rel="noreferrer noopener"><img src="games-resources/10.jpg" class="thumbnail" alt="Smart10"></a>
-      </div>
-
-    </div>
+    <div class="site-footer">
+      Copyright 2026 by
+      <img src="contact-resources/signature.png" alt="signature" class="footer-signature">
+    <div>
 
     <script src="games-resources/script.js"></script>
   </body>
