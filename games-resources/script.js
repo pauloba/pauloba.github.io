@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const searchBoxContainer = document.getElementById('search-box');
 	const resultsContainer = document.getElementById('results');
 	const gameDetailsContainer = document.getElementById('game-details');
+	const gameDetailsPanel = document.getElementById('game-details-panel');
+	const searchView = document.getElementById('search-view');
+	const searchViewLink = document.getElementById('search-view-link');
+	const allGamesContainer = document.getElementById('all-games');
+	const allGamesLink = document.getElementById('all-games-link');
 
 	// Create form inside search box
 	const form = document.createElement('form');
@@ -146,6 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			const totalEl = document.getElementById('total-games');
 			const total = Array.isArray(data) ? data.length : 0;
 			if (totalEl) totalEl.textContent = `Σ = ${total}`;
+			if (allGamesContainer) {
+				allGamesContainer.innerHTML = `<ul>${games.map(game => `<li>${game.game}</li>`).join('')}</ul>`;
+			}
 		})
 		.catch(err => {
 			console.error('Error loading games:', err);
@@ -247,6 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function displayResults(games, searchValue, searchType) {
 		if (!games.length) {
+			if (gameDetailsPanel) gameDetailsPanel.hidden = true;
 			if (searchType === 'mechanic') {
 				resultsContainer.innerHTML = `<p>No games found with mechanic: <strong>${searchValue}</strong></p>`;
 			} else if (searchType === 'range') {
@@ -256,6 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 			return;
 		}
+		if (gameDetailsPanel) gameDetailsPanel.hidden = false;
 		resultsContainer.innerHTML = `<ul>${games.map((game, idx) => `<li><span class="game-name" data-idx="${idx}">${game.game}</span> <br><small>(players: ${game.min_players === game.max_players ? game.min_players : `${game.min_players}-${game.max_players}`})</small></li>`).join('')}</ul>`;
 
 		// Add click event listeners to each game name
@@ -315,5 +325,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 	
 	return `<p><strong>Expansions:</strong><br>${formattedItems.join('<br>')}</p>`;
+	}
+
+	if (searchView && searchViewLink && allGamesContainer && allGamesLink) {
+		searchViewLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			searchView.hidden = false;
+			allGamesContainer.hidden = true;
+			gameDetailsPanel.hidden = true;
+			resultsContainer.innerHTML = '';
+			gameDetailsContainer.innerHTML = '<p class="no-selection">Click on a game name to see details.</p>';
+		});
+
+		allGamesLink.addEventListener('click', function(e) {
+			e.preventDefault();
+			searchView.hidden = true;
+			allGamesContainer.hidden = false;
+			gameDetailsPanel.hidden = true;
+			gameDetailsContainer.innerHTML = '<p class="no-selection">Click on a game name to see details.</p>';
+		});
 	}
 });
