@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			const total = Array.isArray(data) ? data.length : 0;
 			if (totalEl) totalEl.textContent = `Σ = ${total}`;
 			if (allGamesContainer) {
-				allGamesContainer.innerHTML = `<ul>${games.map(game => `<li>${game.game}</li>`).join('')}</ul>`;
+				allGamesContainer.innerHTML = `<ul>${games.map(game => `<li><strong>${game.game}</strong>, ${game.language}, players [${game.min_players}-${game.max_players}]</li>`).join('')}</ul>`;
 			}
 		})
 		.catch(err => {

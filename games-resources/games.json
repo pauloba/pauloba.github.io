@@ -1,6 +1,7 @@
 [
   {
     "game": "Azul",
+    "language": "Spanish",
     "year": 2017,
     "bgg_url": "https://boardgamegeek.com/boardgame/230802/azul",
     "min_players": 2,
@@ -32,6 +33,7 @@
   },
   {
     "game": "Backdoors & Breaches",
+    "language": "English",
     "year": 2019,
     "bgg_url": "https://boardgamegeek.com/boardgame/297925/backdoors-and-breaches-core-deck",
     "min_players": 2,
@@ -48,12 +50,13 @@
   },
   {
     "game": "Camel up. 2nd edition",
+    "language": "English",
     "year": 2018,
     "bgg_url": "https://boardgamegeek.com/boardgame/260605/camel-up-second-edition",
     "min_players": 3,
     "max_players": 8,
     "mechanics": "PnP, party, bidding, dice rolling",
-    "description": "bet on five racing camels, trying to suss out which ones will place first and second in a quick race around a pyramid. The earlier you place your bet, the more you can win — should you guess correctly, of course.",
+    "description": "bet on five racing camels, trying to suss out which ones will place first and second in a quick race around a pyramid. The earlier you place your bet, the more you can win, should you guess correctly, of course. 3D-printed from https://makerworld.com/en/models/733924-camel-race-a-crazy-and-exciting-p-i-y-board-game?from=search#profileId-665683",
     "playing_time": "45 minutes",
     "age": 8,
     "complexity": 1.51,
@@ -74,7 +77,8 @@
     }
   },
   {
-    "game": "Cheese thief",
+    "game": "Ladrón de queso",
+    "language": "Spanish",
     "year": 2020,
     "bgg_url": "https://boardgamegeek.com/boardgame/294175/cheese-thief",
     "min_players": 4,
@@ -91,6 +95,7 @@
   },
   {
     "game": "Chroma mix",
+    "language": "English",
     "year": 2024,
     "bgg_url": "https://boardgamegeek.com/boardgame/382241/chroma-mix",
     "min_players": 1,
@@ -107,6 +112,7 @@
   },    
   {
     "game": "Cubeo",
+    "language": "?",
     "year": 2016,
     "bgg_url": "https://boardgamegeek.com/boardgame/191916/cubeo",
     "min_players": 2,
@@ -123,6 +129,7 @@
   },
   {
     "game": "Dama y tigre",
+    "language": "Spanish",
     "year": 2018,
     "bgg_url": "https://boardgamegeek.com/boardgame/222643/the-lady-and-the-tiger",
     "min_players": 1,
@@ -139,6 +146,7 @@
   },
   {
     "game": "DnD healing potion markers & dice",
+    "language": "English",
     "year": 2021,
     "bgg_url": "https://lynxshop.com/products/dnd-healing-potion-markers-dice-for-dungeons-dragons-dnd-5th-edition",
     "min_players": 2,
@@ -155,11 +163,12 @@
   },  
   {
     "game": "Dragon keepers",
+    "language": "Spanish",
     "year": 2024,
     "bgg_url": "https://boardgamegeek.com/boardgame/383109/dragonkeepers",
     "min_players": 2,
     "max_players": 4,
-    "mechanics": "hand management, open drafting, set collection",
+    "mechanics": "market, hand management, open drafting, set collection",
     "description": "herd dragons and cast magic spells to boost their value.",
     "playing_time": "20 minutes",
     "age": 8,
@@ -171,6 +180,7 @@
   },
     {
     "game": "Dungeon book of battle mats",
+    "language": "English",
     "year": 2019,
     "bgg_url": "https://boardgamegeek.com/rpgitem/291356/the-dungeon-books-of-battle-mats",
     "min_players": 2,
@@ -187,6 +197,7 @@
   },
   {
     "game": "El crimen de Quintana de la Matanza",
+    "language": "Spanish",
     "year": 2020,
     "bgg_url": "https://boardgamegeek.com/boardgame/304847/hidden-games-crime-scene-the-new-haven-case",
     "min_players": 1,
@@ -203,6 +214,7 @@
   },    
   {
     "game": "Exclusion zone botanist",
+    "language": "English",
     "year": 2025,
     "bgg_url": "https://rpggeek.com/rpg/106924/exclusion-zone-botanist",
     "min_players": 1,
@@ -219,6 +231,7 @@
   },  
   {
     "game": "A fake artist goes to NY",
+    "language": "English",
     "year": 2011,
     "bgg_url": "https://boardgamegeek.com/boardgame/135779/a-fake-artist-goes-to-new-york",
     "min_players": 5,
@@ -235,6 +248,7 @@
   },
   {
     "game": "Forage",
+    "language": "Spanish",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/373577/forage-a-9-card-solitaire-game",
     "min_players": 1,
@@ -251,6 +265,7 @@
   },
   {
     "game": "Grove",
+    "language": "Spanish",
     "year": 2021,
     "bgg_url": "https://boardgamegeek.com/boardgame/329873/grove-9-card-solitaire-game",
     "min_players": 1,
@@ -270,6 +285,7 @@
   },
   {
     "game": "Hive pocket",
+    "language": "Spanish",
     "year": 2023,
     "bgg_url": "https://boardgamegeek.com/boardgame/154597/hive-pocket",
     "min_players": 2,
@@ -297,11 +313,12 @@
   },
   {
     "game": "Imhotep",
+    "language": "Spanish",
     "year": 2016,
     "bgg_url": "https://boardgamegeek.com/boardgame/191862/imhotep",
     "min_players": 2,
     "max_players": 4,
-    "mechanics": "PnP, area majority, end-game bonus, set collection, worker placement, cards",
+    "mechanics": "PnP, market, area majority, end-game bonus, set collection, worker placement, cards",
     "description": "over 6 rounds, the players move wooden stones by boat to create 5 seminal monuments. On a turn, a player chooses 1 of 4 actions: procure new stones, load stones on a boat, bring a boat to a monument, or play an action card.",
     "playing_time": "40 minutes",
     "age": 10,
@@ -328,6 +345,7 @@
   },
   {
     "game": "Miru",
+    "language": "English",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/378489/miru-an-analog-adventure-game",
     "min_players": 1,
@@ -344,6 +362,7 @@
   },
   {
     "game": "Munchkin",
+    "language": "Spanish",
     "year": 2010,
     "bgg_url": "https://boardgamegeek.com/boardgame/1927/munchkin",
     "min_players": 3,
@@ -360,6 +379,7 @@
   },
   {
     "game": "Mysterium park",
+    "language": "Spanish",
     "year": 2020,
     "bgg_url": "https://boardgamegeek.com/boardgame/301767/mysterium-park",
     "min_players": 2,
@@ -376,6 +396,7 @@
   },
   {
     "game": "Orchard",
+    "language": "English",
     "year": 2018,
     "bgg_url": "https://boardgamegeek.com/boardgame/245487/orchard-9-card-solitaire-game",
     "min_players": 1,
@@ -399,6 +420,7 @@
   },
   {
     "game": "Pistas cruzadas",
+    "language": "Spanish",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/300753/cross-clues",
     "min_players": 2,
@@ -415,6 +437,7 @@
   },
   {
     "game": "Polyhedral potions",
+    "language": "English",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/358754/polyhedral-potions",
     "min_players": 1,
@@ -434,6 +457,7 @@
   },
   {
     "game": "Potion explotion",
+    "language": "Spanish",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/180974/potion-explosion",
     "min_players": 2,
@@ -450,11 +474,12 @@
   },
   {
     "game": "QLAB Laboratorio cuántico",
+    "language": "Galego",
     "year": 2023,
     "bgg_url": "https://www.youtube.com/playlist?app=desktop&list=PLvAJrckik_UOHy54KFSoYNiLRjR1Q0FAd",
     "min_players": 1,
     "max_players": 4,
-    "mechanics": "strategy, cooperative, cards",
+    "mechanics": "investigation, strategy, cooperative, cards",
     "description": "Each player manages a laboratory in which Quantum Computing experiments are carried out which, if successful, will contribute grains of sand to the global scientific community.",
     "playing_time": "1 hour",
     "age": 8,
@@ -466,6 +491,7 @@
   },   
   {
     "game": "Rail road ink, edicion azul",
+    "language": "Spanish",
     "year": 2019,
     "bgg_url": "https://boardgamegeek.com/boardgame/245654/railroad-ink-deep-blue-edition",
     "min_players": 1,
@@ -482,6 +508,7 @@
   },
     {
     "game": "Scattergories",
+    "language": "Spanish",
     "year": 1988,
     "bgg_url": "https://boardgamegeek.com/boardgame/2381/scattergories",
     "min_players": 2,
@@ -498,6 +525,7 @@
   },
   {
     "game": "Se vende",
+    "language": "Spanish",
     "year": 2012,
     "bgg_url": "https://boardgamegeek.com/boardgame/172/for-sale",
     "min_players": 3,
@@ -517,6 +545,7 @@
   },
   {
     "game": "Secret Hitler",
+    "language": "English",
     "year": 2015,
     "bgg_url": "https://boardgamegeek.com/boardgame/188834/secret-hitler",
     "min_players": 5,
@@ -533,6 +562,7 @@
   },                        
   {
     "game": "SixStix",
+    "language": "English",
     "year": 2017,
     "bgg_url": "https://boardgamegeek.com/boardgame/194438/sixstix",
     "min_players": 1,
@@ -549,6 +579,7 @@
   },
   {
     "game": "Smart 10",
+    "language": "Spanish",
     "year": 2021,
     "bgg_url": "https://boardgamegeek.com/boardgame/241590/smart10",
     "min_players": 2,
@@ -565,11 +596,12 @@
   },
   {
     "game": "Splendor duel",
+    "language": "Spanish",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/364073/splendor-duel",
     "min_players": 2,
     "max_players": 2,
-    "mechanics": "open drafting, set collection, cards",
+    "mechanics": "market, open drafting, set collection, cards",
     "description": "take Gem and Pearl tokens from the common board, then purchase cards, gather bonuses, royal favors, and prestige.",
     "playing_time": "30 minutes",
     "age": 10,
@@ -581,6 +613,7 @@
   },
   {
     "game": "Spots",
+    "language": "German",
     "year": 2022,
     "bgg_url": "https://boardgamegeek.com/boardgame/372559/spots",
     "min_players": 2,
@@ -597,6 +630,7 @@
   },
   {
     "game": "Star realms. Colony wars",
+    "language": "English",
     "year": 2017,
     "bgg_url": "https://boardgamegeek.com/boardgame/182631/star-realms-colony-wars",
     "min_players": 2,
@@ -613,6 +647,7 @@
   },
   {
     "game": "Tinderblox",
+    "language": "English",
     "year": 2024,
     "bgg_url": "https://boardgamegeek.com/boardgame/295192/tinderblox",
     "min_players": 2,
@@ -629,6 +664,7 @@
   },
   {
     "game": "UNO",
+    "language": "Italian",
     "year": 1971,
     "bgg_url": "https://boardgamegeek.com/boardgame/2223/uno",
     "min_players": 2,
@@ -645,6 +681,7 @@
   },
   {
     "game": "Voyages",
+    "language": "English",
     "year": 2021,
     "bgg_url": "https://boardgamegeek.com/boardgame/350736/voyages",
     "min_players": 1,
@@ -661,6 +698,7 @@
   },
   {
     "game": "Yahtzee",
+    "language": "?",
     "year": 1956,
     "bgg_url": "https://boardgamegeek.com/boardgame/2243/yahtzee",
     "min_players": 2,
