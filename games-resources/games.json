@@ -49,6 +49,23 @@
     }
   },
   {
+    "game": "Black sonata",
+    "language": "English",
+    "year": 2017,
+    "bgg_url": "https://boardgamegeek.com/boardgame/231218/black-sonata",
+    "min_players": 1,
+    "max_players": 1,
+    "mechanics": "PnP, strategy, deduction",
+    "description": "based on Shakespeare's London 1960, in pursuit of the Black Lady. A specially ordered deck of cards determines her hidden movements from place to place. You must intercept her.",
+    "playing_time": "30 minutes",
+    "age": 12,
+    "complexity": 2.12,
+    "cards": "sleeved",
+    "expansion": {
+      "e1": "No"
+    }
+  },
+  {
     "game": "Camel up. 2nd edition",
     "language": "English",
     "year": 2018,
@@ -394,6 +411,38 @@
       "e1": "No"
     }
   },
+ {
+    "game": "One card dungeon",
+    "language": "English",
+    "year": 2021,
+    "bgg_url": "",
+    "min_players": 1,
+    "max_players": 1,
+    "mechanics": "PnP, strategy, fantasy, dice rolling",
+    "description": "a solo dungeon crawler game that fits in your pocket. Contents: 1 dungeon card + 4 class cards: barbarian, paladin, ranger, wizard.",
+    "playing_time": "15 minutes",
+    "age": 10,
+    "complexity": 1.53,
+    "cards": "sleeved",
+    "expansion": {
+      "e1": {
+        "title": "M'Guf-yn returns' (2023)",
+        "description": "1 dungeon card + 4 class cards: knight, rogue, cleric, necromancer."
+      },
+      "e2": {
+        "title": "Harbour clash (2025)",
+        "description": "1 dungeon card + 1 class card: corsair + 5 item cards."
+      },
+      "e3": {
+        "title": "Eternal peak (2025)",
+        "description": "1 dungeon card + 1 class card: sherpa + 5 item cards."
+      },
+      "e4": {
+        "title": "Hell's door (2026)",
+        "description": "1 dungeon card + 1 boss level card + 1 class card: demon hunter + 5 item cards."
+      }
+    }    
+  },  
   {
     "game": "Orchard",
     "language": "English",
