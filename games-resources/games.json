@@ -56,7 +56,7 @@
     "min_players": 1,
     "max_players": 1,
     "mechanics": "PnP, strategy, deduction",
-    "description": "based on Shakespeare's London 1960, in pursuit of the Black Lady. A specially ordered deck of cards determines her hidden movements from place to place. You must intercept her.",
+    "description": "you are on Shakespeare's London circa 1960, in pursuit of the Black Lady. A specially ordered deck of cards determines her hidden movements from place to place, you must intercept her.",
     "playing_time": "30 minutes",
     "age": 12,
     "complexity": 2.12,
@@ -129,7 +129,7 @@
   },    
   {
     "game": "Cubeo",
-    "language": "?",
+    "language": "English",
     "year": 2016,
     "bgg_url": "https://boardgamegeek.com/boardgame/191916/cubeo",
     "min_players": 2,
@@ -420,7 +420,7 @@
     "max_players": 1,
     "mechanics": "PnP, strategy, fantasy, dice rolling",
     "description": "a solo dungeon crawler game that fits in your pocket. Contents: 1 dungeon card + 4 class cards: barbarian, paladin, ranger, wizard.",
-    "playing_time": "15 minutes",
+    "playing_time": "15-60 minutes",
     "age": 10,
     "complexity": 1.53,
     "cards": "sleeved",
@@ -431,15 +431,15 @@
       },
       "e2": {
         "title": "Harbour clash (2025)",
-        "description": "1 dungeon card + 1 class card: corsair + 5 item cards."
+        "description": "1 dungeon card + 1 class card: corsair + 5 item cards: gorgon's head, hidden sands, black powder, dragon eye, hourglass."
       },
       "e3": {
         "title": "Eternal peak (2025)",
-        "description": "1 dungeon card + 1 class card: sherpa + 5 item cards."
+        "description": "1 dungeon card + 1 class card: sherpa + 5 item cards: spiked wyrm extract, heal ing herbs, rope and ice axe, leather cloack, flame of fate."
       },
       "e4": {
         "title": "Hell's door (2026)",
-        "description": "1 dungeon card + 1 boss level card + 1 class card: demon hunter + 5 item cards."
+        "description": "1 dungeon card + 1 boss level card + 1 class card: demon hunter + 5 item cards: soul pendant, holy water, laurel wreath, iron fist, mail coat."
       }
     }    
   },  
