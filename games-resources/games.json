@@ -281,6 +281,22 @@
     }
   },
   {
+    "game": "Gloomhaven bichos y botones",
+    "language": "Spanish",
+    "year": 2024,
+    "bgg_url": "https://boardgamegeek.com/boardgame/393672/gloomhaven-buttons-and-bugs",
+    "min_players": 1,
+    "max_players": 1,
+    "mechanics": "fighting, fantasy, miniatures, solitaire",
+    "description": "Your character is one such wannabe hero. In an ill-advised attempt at fame, they try to visit Hail, and poof. Now they're the size of a mouse and have entered an entirely different realm of lawlessness and self-preservation. They must find a new way into the Crooked Bone to convince Hail to return them to their previous size.",
+    "age": 10,
+    "complexity": 3.31,
+    "cards": "yes",
+    "expansion": {
+      "e1": "No"
+    }
+  },  
+  {
     "game": "Grove",
     "language": "Spanish",
     "year": 2021,
@@ -418,7 +434,7 @@
     "bgg_url": "",
     "min_players": 1,
     "max_players": 1,
-    "mechanics": "PnP, solitaire, strategy, fantasy, dice rolling, dice (no rolling)",
+    "mechanics": "PnP, fighting, solitaire, strategy, fantasy, dice rolling, dice (no rolling)",
     "description": "a solo dungeon crawler game that fits in your pocket. Contents: 1 dungeon card + 4 class cards: barbarian, paladin, ranger, wizard.",
     "playing_time": "15-60 minutes",
     "age": 10,
