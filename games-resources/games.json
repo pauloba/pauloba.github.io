@@ -289,6 +289,7 @@
     "max_players": 1,
     "mechanics": "fighting, fantasy, miniatures, solitaire",
     "description": "Your character is one such wannabe hero. In an ill-advised attempt at fame, they try to visit Hail, and poof. Now they're the size of a mouse and have entered an entirely different realm of lawlessness and self-preservation. They must find a new way into the Crooked Bone to convince Hail to return them to their previous size.",
+    "playing_time": "20 minutes",
     "age": 10,
     "complexity": 3.31,
     "cards": "yes",
