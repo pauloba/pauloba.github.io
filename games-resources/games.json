@@ -124,7 +124,8 @@
     "complexity": 2,
     "cards": "sleeved",
     "expansion": {
-      "e1": "No"
+      "e1": "Solo mode (2024)",
+      "description": "Instructions included with the game https://www.jorgezhang.com/2023/2/CMYK/pdf/ChromaMixDigitalRules.pdf"
     }
   },    
   {
@@ -322,7 +323,7 @@
     "language": "Spanish",
     "year": 2023,
     "bgg_url": "https://boardgamegeek.com/boardgame/154597/hive-pocket",
-    "min_players": 2,
+    "min_players": 1,
     "max_players": 2,
     "mechanics": "strategy, abstract",
     "description": "strategic game for two players that is not restricted by a board and can be played anywhere on any flat surface. The base game of Hive is made up of twenty two pieces, eleven black and eleven white, resembling a variety of insects.",
@@ -332,14 +333,18 @@
     "cards": "no",
     "expansion": {
       "e1": {
+        "title": "Hive in 5: solo mode (2023)",
+        "description": "https://www.tarpeygames.com/hive-in-five"
+      },
+      "e2": {
         "title": "Mosquito (2007)",
         "description": "During the game, they are placed in the same way as the other pieces. Once in play, the Mosquito takes on the movement characteristics of any creature it touches at the time, thus changing its characteristics throughout the game."
       },
-      "e2": {
+      "e3": {
         "title": "Ladybug (2010)",
         "description": "The ladybug moves exactly three spaces each turn: two spaces up onto the hive and one space down off the hive."
       },
-      "e3": {
+      "e4": {
         "title": "Pillbug (2013)",
         "description": "The pillbug can move one space at a time OR it can move an adjacent unstacked piece (friend or enemy) two spaces: up onto the pillbug itself, then down into another empty space adjacent to itself."
       }

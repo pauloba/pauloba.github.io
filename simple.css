@@ -82,6 +82,10 @@ body > * {
   grid-column: 2;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Make the header bg full width, but the content inline with body */
 body > header {
   background-color: var(--accent-bg);
